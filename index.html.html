@@ -1,0 +1,413 @@
+<!DOCTYPE html><html lang="sq"><head><meta charset="utf-8"><title>Shkolla “Pal Engjëlli” 2026–2027</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--bg:#f3f5fb;--fg:#1b2340;--card:#fff;--mut:#5b6486;--nav:#12245c;--b:#2f5bea;--v:#7a4ee0;--g:#16a36a;--o:#f28c28;--r:#e5484d;--y:#f5c542;--line:#dde2f2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;--bg:#0e1430;--fg:#e8ecff;--card:#192049;--mut:#a3accf;--line:#2c3566}}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;font:15px/1.5 system-ui,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+a{color:var(--b)}h1,h2,h3{margin:.2em 0}
+.top{background:linear-gradient(120deg,var(--nav),var(--v));color:#fff;padding:12px 18px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.top a{color:#fff;text-decoration:none;padding:6px 10px;border-radius:8px}.top a:hover{background:#ffffff33}.top b{font-size:17px;margin-right:auto}
+.hero{background:linear-gradient(135deg,var(--nav),var(--b) 55%,var(--v));color:#fff;padding:60px 20px;text-align:center}
+.hero h1{font-size:clamp(26px,5vw,44px)}.logo{font-size:54px}
+.wrap{max-width:1100px;margin:auto;padding:20px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 2px 8px #0001}
+.st{color:#fff;border:0}.c1{background:var(--b)}.c2{background:var(--v)}.c3{background:var(--g)}.c4{background:var(--o)}.c5{background:var(--r)}.c6{background:#0d9488}
+.st h2{font-size:34px}
+button,.btn{background:var(--b);color:#fff;border:0;border-radius:9px;padding:8px 14px;cursor:pointer;font:inherit;text-decoration:none;display:inline-block;transition:.15s}
+button:hover,.btn:hover{transform:translateY(-1px);filter:brightness(1.1)}button.g{background:var(--g)}button.r{background:var(--r)}button.s{background:var(--mut)}
+input,select,textarea{font:inherit;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);max-width:100%}
+label{display:block;margin:8px 0 3px;font-weight:600}
+.empty{text-align:center;padding:30px;color:var(--mut);border:2px dashed var(--line);border-radius:14px}.empty .i{font-size:36px}
+.app{display:grid;grid-template-columns:210px 1fr;min-height:100vh}.side{background:var(--nav);color:#fff;padding:14px}
+.side button{display:block;width:100%;text-align:left;background:transparent;margin:3px 0}.side button.on{background:var(--v)}
+.main{padding:18px;overflow-x:auto}.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card)}th,td{border:1px solid var(--line);padding:6px 8px;text-align:center}th{background:var(--nav);color:#fff}td.l{text-align:left}
+td.m{background:#fde2e2;color:#9b1c1c;font-weight:600}
+.bar{height:20px;background:linear-gradient(90deg,var(--b),var(--v));border-radius:6px;color:#fff;font-size:12px;padding:0 6px;min-width:22px}
+.chips label{display:inline-block;background:var(--bg);padding:5px 10px;border-radius:20px;margin:3px;font-weight:400}
+footer{background:var(--nav);color:#cfd6f5;text-align:center;padding:22px;margin-top:30px}
+.note{background:#fff4d6;color:#5b4300;padding:10px;border-radius:10px;font-size:13px}
+@media(max-width:760px){.app{grid-template-columns:1fr}.side{display:flex;flex-wrap:wrap;gap:4px}.side button{width:auto}}
+@media print{.top,.side,.noprint,footer{display:none!important}.app{display:block}body{background:#fff;color:#000}th{background:#ddd;color:#000}@page{size:A4 landscape}}
+:root{--bg:#f5f3ee;--fg:#1c2433;--card:#fff;--mut:#5d6575;--nav:#14284b;--b:#1f4e8c;--v:#6b2737;--g:#2f6f5e;--o:#a8741a;--r:#9b2c2c;--y:#c9a227;--line:#d9d4c7}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10182b;--fg:#ece8dc;--card:#18233d;--mut:#a9b0c0;--line:#2b3957}}
+body{font-family:'Segoe UI',Arial,sans-serif}h1,h2,h3{font-family:Georgia,'Times New Roman',serif;letter-spacing:.2px}
+.top{background:var(--nav);border-bottom:3px solid var(--y);gap:6px}.top a{font-size:14px;padding:6px 9px}.top .lg{display:flex;align-items:center;gap:10px;margin-right:auto;color:#fff;font:700 17px Georgia,serif;text-decoration:none}
+.hero{background:linear-gradient(135deg,rgba(20,40,75,.96),rgba(31,78,140,.92)),repeating-linear-gradient(45deg,#0000 0 14px,#ffffff10 14px 15px);padding:64px 20px}
+.hero .btn{background:var(--y);color:#14284b;font-weight:700}.hero .btn.o{background:transparent;color:#fff;border:1px solid #fff}
+.band{background:var(--nav);color:#fff;padding:26px 20px;text-align:center;border-bottom:3px solid var(--y)}
+.card{border-radius:8px}.card h3{color:var(--nav)}@media(prefers-color-scheme:dark){.card h3{color:var(--y)}}
+.ft{border-top:4px solid var(--b)}.ft .ic{font-size:28px}
+th{background:var(--nav)}.side{background:var(--nav);border-right:3px solid var(--y)}.side button.on{background:var(--v)}
+footer{background:var(--nav);border-top:3px solid var(--y)}footer a{color:var(--y)}footer .grid{text-align:left;max-width:1000px;margin:auto}
+.gi{border-radius:8px;width:100%;aspect-ratio:4/3;object-fit:cover}
+details{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:6px 0}summary{cursor:pointer;font-weight:600}
+.top{border-bottom:5px solid;border-image:linear-gradient(90deg,#1f4e8c,#5b4a8a,#8b2e45,#c9a227,#3f7d4e,#1f7a7a) 1}
+.c1{background:linear-gradient(135deg,#1f4e8c,#2d6bb5)}.c2{background:linear-gradient(135deg,#8b2e45,#b04561)}.c3{background:linear-gradient(135deg,#1f7a7a,#2c9a98)}.c4{background:linear-gradient(135deg,#a8741a,#c9962f)}.c5{background:linear-gradient(135deg,#5b4a8a,#7a68ad)}.c6{background:linear-gradient(135deg,#3f7d4e,#58a06a)}
+.card.ft:nth-child(6n+1){border-top-color:#1f4e8c}.card.ft:nth-child(6n+2){border-top-color:#8b2e45}.card.ft:nth-child(6n+3){border-top-color:#1f7a7a}.card.ft:nth-child(6n+4){border-top-color:#c9a227}.card.ft:nth-child(6n+5){border-top-color:#5b4a8a}.card.ft:nth-child(6n+6){border-top-color:#3f7d4e}
+.wrap>h2{border-left:6px solid var(--y);padding-left:10px;margin-top:28px}
+.side button:hover{background:#ffffff22}.side button.on{background:linear-gradient(90deg,#8b2e45,#5b4a8a)}
+.main h1{border-bottom:3px solid var(--y);padding-bottom:6px;color:var(--nav)}@media(prefers-color-scheme:dark){.main h1{color:#ece8dc}}
+tr:nth-child(even) td{background:#00000008}.badge{display:inline-block;padding:2px 9px;border-radius:12px;font-size:12px;color:#fff;margin:1px}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.cal div{background:var(--card);border:1px solid var(--line);border-radius:6px;min-height:70px;padding:4px;font-size:12px}.cal .h{min-height:0;background:var(--nav);color:#fff;text-align:center;font-weight:700}
+
+.ic:empty,.empty .i:empty{display:none}
+body{font-size:15px;line-height:1.6}
+.top{background:#0f2147;padding:10px 22px}.top a{text-transform:uppercase;font-size:11.5px;letter-spacing:.7px;font-weight:600;border-radius:2px}
+.top .lg span{font-size:16px;letter-spacing:.3px;text-transform:none}
+.hero{padding:84px 20px 92px}.hero h1{font-size:clamp(28px,5vw,48px);font-weight:700;letter-spacing:.3px}
+.hero .btn{border-radius:2px;padding:12px 24px;text-transform:uppercase;font-size:13px;letter-spacing:.8px}
+button,.btn{border-radius:3px;font-weight:600;letter-spacing:.2px}
+.card{border-radius:4px;box-shadow:0 1px 4px #14284b1a}
+.card.st{background:var(--card)!important;color:var(--mut)!important;border:1px solid var(--line);border-left:6px solid var(--ac,#1f4e8c)}
+.card.st h2{color:var(--nav)!important;font-size:34px;margin:0}@media(prefers-color-scheme:dark){.card.st h2{color:#fff!important}}
+.c1{--ac:#1f4e8c}.c2{--ac:#8b2e45}.c3{--ac:#1f7a7a}.c4{--ac:#c9a227}.c5{--ac:#5b4a8a}.c6{--ac:#3f7d4e}
+.card.ft{border-top-width:4px}
+.band{padding:38px 20px}.band h1{font-size:32px}.band div{opacity:.85;letter-spacing:.5px}
+th{font-size:12.5px;text-transform:uppercase;letter-spacing:.5px}tr:hover td{background:#1f4e8c12}
+.side{width:230px}.side button{border-radius:3px;font-weight:500;padding:9px 12px}.app{grid-template-columns:230px 1fr}
+.main{padding:26px 30px}.main h2{color:var(--nav);border-left:5px solid var(--y);padding-left:10px;margin-top:26px}
+@media(prefers-color-scheme:dark){.main h2{color:#ece8dc}}
+.steps{counter-reset:s}.steps .card{position:relative;padding-top:34px}.steps .card::before{counter-increment:s;content:counter(s);position:absolute;top:-14px;left:14px;width:30px;height:30px;line-height:30px;text-align:center;border-radius:50%;background:var(--nav);color:#fff;font-weight:700;border:2px solid var(--y)}
+.sec{background:linear-gradient(180deg,#fff0,#1f4e8c0d);padding:6px 0}
+:root{--b:#1f3a6e;--v:#2a3f6b;--g:#2c5a4a;--o:#8a6a1f;--r:#8a2b2b;--y:#b8963c;--bg:#f4f5f7;--line:#d5d9e2}
+.top{border-bottom:3px solid var(--y);border-image:none}
+.hero{background:#14284b;background-image:repeating-linear-gradient(135deg,#0000 0 22px,#ffffff08 22px 23px);border-bottom:4px solid var(--y)}
+.hero .btn{background:var(--y);color:#14284b}
+.c1,.c2,.c3,.c4,.c5,.c6{--ac:#14284b;background:var(--card)}
+.card.st{border-left-color:#14284b}
+.card.ft,.card.ft:nth-child(n){border-top:3px solid #14284b!important}
+.card.ft:nth-child(n) .ic{display:none}
+.badge,.badge.c1,.badge.c2,.badge.c3,.badge.c4,.badge.c5,.badge.c6{background:#14284b!important;color:#fff}
+.bar{background:#14284b}
+.side{background:#14284b}.side button.on{background:#ffffff1f;border-left:4px solid var(--y)}
+.steps .card::before{background:#14284b}
+.band{background:#14284b}
+.main h2,.wrap>h2{border-left-color:var(--y)}
+th{background:#14284b}
+.hero svg,.hero img{width:140px!important;height:140px!important;background:#fff;border-radius:50%;padding:5px;box-shadow:0 0 0 3px var(--y)}
+.top .lg svg,.top .lg img,.side svg,.side img,footer svg,footer img{width:46px!important;height:46px!important;background:#fff;border-radius:50%;padding:2px}
+.side svg,.side img{width:70px!important;height:70px!important}
+.card svg,.card img.lg{width:100px;height:100px}
+
+.w{max-width:1180px;margin:auto;padding:0 20px}
+.u1{background:#0b1f48;color:#c9d3ea;font-size:12.5px}.u1 .w{display:flex;justify-content:space-between;padding:7px 20px;flex-wrap:wrap;gap:6px}.u1 a{color:#c9d3ea;margin-left:18px;text-decoration:none}.u1 a:hover{color:#fff}
+.u2{background:var(--card);border-bottom:1px solid var(--line)}.u2 .w{padding:14px 20px}
+.lg2{display:flex;align-items:center;gap:16px;text-decoration:none;color:var(--nav)}.lg2 svg,.lg2 img{width:68px!important;height:68px!important}.lg2 span{display:flex;flex-direction:column;line-height:1.2}.lg2 b{font:700 13px Georgia,serif;letter-spacing:1.6px}.lg2 i{font:700 27px Georgia,serif;font-style:normal}.lg2 small{color:var(--mut);font-size:12px}
+@media(prefers-color-scheme:dark){.lg2{color:var(--fg)}}
+.u3{background:#12306b;position:sticky;top:0;z-index:20;border-bottom:3px solid var(--y)}.u3 .w{display:flex;flex-wrap:wrap}
+.u3 a{color:#fff;text-decoration:none;padding:13px 16px;font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;display:block}.u3 a:hover{background:#ffffff1c}
+.dd{position:relative}.dm{display:none;position:absolute;top:100%;left:0;min-width:230px;background:#fff;box-shadow:0 8px 20px #0003;z-index:30;border-top:3px solid var(--y)}.dd:hover .dm,.dd:focus-within .dm{display:block}
+.u3 .dm a{color:#12306b;text-transform:none;font-size:14px;letter-spacing:0;font-weight:500;border-bottom:1px solid #e5e8ef}.u3 .dm a:hover{background:#eef2fa}
+.u3 .pt{margin-left:auto;background:var(--y);color:#12306b}.u3 .pt:hover{background:#d4b04c}
+@media(max-width:760px){.dm{position:static;display:block;box-shadow:none;border:0;background:#0d2759}.u3 .dm a{color:#dbe3f5;border:0;padding:8px 26px}.u3 .pt{margin-left:0}}
+.hs{position:relative;height:440px;overflow:hidden;background:#12306b}
+.sl{position:absolute;inset:0;background:linear-gradient(120deg,#12306b,#1d4a8f);background-size:cover;background-position:center;opacity:0;transition:opacity .8s;display:flex;align-items:center;color:#fff}.sl.on{opacity:1;z-index:1}.sl .w{width:100%}
+.sl h2{font:700 clamp(26px,4.5vw,46px)/1.15 Georgia,serif;max-width:720px;margin:0 0 12px;color:#fff;padding:0;border:0}.sl p{max-width:560px;font-size:18px;margin:0 0 20px}
+.sl .btn{background:var(--y);color:#12306b;border-radius:2px;padding:12px 24px;text-transform:uppercase;font-size:13px;letter-spacing:.8px}
+.ar{position:absolute;top:50%;z-index:3;background:#0006;width:44px;height:60px;font-size:32px;border-radius:0;padding:0;transform:translateY(-50%)}.ar.l{left:0}.ar.r{right:0}
+.dts{position:absolute;bottom:14px;left:0;right:0;text-align:center;z-index:3}.dt{display:inline-block;width:12px;height:12px;border-radius:50%;background:#fff6;margin:0 4px;cursor:pointer}.dt.on{background:var(--y)}
+.tls{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.tl{background:#12306b;color:#fff;text-decoration:none;padding:26px 20px;border-right:1px solid #ffffff30;font:700 16px Georgia,serif;text-transform:uppercase;letter-spacing:.6px}.tl small{display:block;font:400 13px system-ui;text-transform:none;opacity:.8;margin-top:6px;letter-spacing:0}.tl:hover{background:#1d4a8f}
+.sc{padding:38px 0}.sh{display:flex;justify-content:space-between;align-items:end;border-bottom:2px solid var(--line);margin-bottom:20px}.sh h2{margin:0 0 -2px;padding:0 0 8px;border-bottom:3px solid var(--y);color:var(--nav);font-size:21px;text-transform:uppercase;letter-spacing:1px}.sh a{font-size:13px;padding-bottom:8px}
+@media(prefers-color-scheme:dark){.sh h2{color:var(--fg)}}
+.ng{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}.nc{background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column}
+.nt{background:linear-gradient(120deg,#12306b,#1d4a8f);color:#fff;padding:16px 18px;font:700 12.5px system-ui;letter-spacing:1px;text-transform:uppercase;min-height:64px}.nb{padding:16px;flex:1}.nb h3{font-size:16px;margin:0 0 8px}.nb details{border:0;padding:0;margin:8px 0 0;background:none}.nb summary{color:var(--b);font-size:13px}
+.mt{background:#12306b;color:#fff;text-align:center;padding:30px 20px;font:italic 24px Georgia,serif;border-top:3px solid var(--y);border-bottom:3px solid var(--y)}
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px}.cc{background:var(--card);border:1px solid var(--line);text-align:center;text-decoration:none;color:var(--fg)}.cc b{display:block;background:#12306b;color:#fff;font:700 38px Georgia,serif;padding:26px 0}.cc span{display:block;padding:12px;font-size:14px}.cc:hover b{background:#1d4a8f}
+.gg{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.band{text-align:left;padding:30px 0}.band .w h1{font-size:32px;margin:6px 0 0}.bc{font-size:13px;opacity:.85}.bc a{color:#fff}
+footer{padding:0;text-align:left}.ft3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;padding:38px 20px}footer h4{color:var(--y);text-transform:uppercase;letter-spacing:1px;margin:0 0 10px;font-size:14px}footer a{display:block;color:#dbe3f5;text-decoration:none;padding:3px 0}footer a:hover{color:#fff}.cp{background:#0b1f48;padding:12px;text-align:center;font-size:13px}
+@media print{.u1,.u2,.u3{display:none!important}}
+
+.blk{margin:22px 0}.blk h2{color:var(--nav);border-left:5px solid var(--y);padding-left:10px}.bimg{max-width:100%;border-radius:4px;display:block}.blk figcaption{color:var(--mut);font-size:13px;margin-top:6px}
+.tix{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;align-items:center}.rev>div:first-child{order:2}
+.edfab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:50;box-shadow:0 4px 14px #0004;background:var(--y);color:#14284b}
+.bk{border:1px solid var(--line);border-radius:6px;padding:12px;margin:10px 0;background:var(--bg)}.bk input,.bk textarea{width:100%;margin:4px 0}
+@media print{.edfab{display:none!important}}
+</style></head><body><div id="v"></div>
+<script>
+const C=[['6a','6A','f1e75b82a163036a917c393eefe60f032871c6e1d41bb56f21a27288f3dffd83'],['6b','6B','a29408e6b1a5bf32f94a61281d1ecf3c41fd386a4ea1ac7847c1ee577a8344ae'],['7','7','80d514ac67e22fab68cd2b3c0b2af0ac8eb76da5a4e4edb61c4202677143ad71'],['8a','8A','75d5c2cdebf63f22e159965ca41f17f51027d248039bd87453d1f7bbf5578cc8'],['8b','8B','49d8128a01c29143a2b31645edc32cdba4a121d4d3de23703a2767dd17cafb5a'],['9','9','4d59cf5f3f942118f39c3a3f4de7f5ed3e8db8b4b2240701e4c3beb7cf9d112b']];
+const DAYS=['Hënë','E martë','E mërkurë','E enjte','E premte'];
+const ST=['E pajustifikuar','Në shqyrtim','E justifikuar','Justifikimi i refuzuar'];
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let db={stu:[],abs:[],ann:[],log:[],codes:{},admin:null};
+try{const r=localStorage.getItem('pe26');if(r)db=Object.assign(db,JSON.parse(r))}catch(e){}
+const save=()=>{try{localStorage.setItem('pe26',JSON.stringify(db))}catch(e){alert('Ruajtja dështoi.')}};
+const sha=s=>{const b=unescape(encodeURIComponent(s)),K=[],Q=[];let c=0;for(let n=2;c<64;n++){let p=1;for(let i=2;i*i<=n;i++)if(n%i==0){p=0;break}if(p){K[c]=(Math.cbrt(n)%1*4294967296)|0;if(c<8)Q[c]=(Math.sqrt(n)%1*4294967296)|0;c++}}
+const l=b.length*8,n=((l+64>>9)<<4)+16,w=new Array(n).fill(0);for(let i=0;i<b.length;i++)w[i>>2]|=b.charCodeAt(i)<<(24-i%4*8);w[l>>5]|=0x80<<(24-l%32);w[n-1]=l;
+const R=(x,k)=>x>>>k|x<<(32-k);
+for(let o=0;o<n;o+=16){const x=w.slice(o,o+16);for(let i=16;i<64;i++){const a=x[i-15],d=x[i-2];x[i]=(x[i-16]+(R(a,7)^R(a,18)^a>>>3)+x[i-7]+(R(d,17)^R(d,19)^d>>>10))|0}
+let[a,b2,c3,d,e,f,g,h]=Q;for(let i=0;i<64;i++){const t1=(h+(R(e,6)^R(e,11)^R(e,25))+((e&f)^(~e&g))+K[i]+x[i])|0,t2=((R(a,2)^R(a,13)^R(a,22))+((a&b2)^(a&c3)^(b2&c3)))|0;h=g;g=f;f=e;e=(d+t1)|0;d=c3;c3=b2;b2=a;a=(t1+t2)|0}
+[a,b2,c3,d,e,f,g,h].forEach((v,i)=>Q[i]=(Q[i]+v)|0)}
+return Q.map(v=>(v>>>0).toString(16).padStart(8,'0')).join('')};
+const H=async t=>{try{if(window.crypto&&crypto.subtle)return [...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t)))].map(b=>b.toString(16).padStart(2,'0')).join('')}catch(e){}return sha(t)};
+let S=null,tab='dash',cls='6a',wk='';
+const cl=id=>C.find(c=>c[0]==id);
+const lg=a=>{db.log.unshift({t:new Date().toLocaleString('sq-AL'),u:S?S.name:'-',a});save()};
+const hrs=d=>{const g=new Date(d+'T12:00').getDay();return g==1?7:(g>=2&&g<=5?6:0)};
+const mon=d=>{const x=new Date(d+'T12:00');x.setDate(x.getDate()-((x.getDay()+6)%7));return x.toISOString().slice(0,10)};
+const today=()=>new Date().toISOString().slice(0,10);
+const scope=()=>S&&S.role=='admin'?null:S&&S.cls;
+const inS=x=>!scope()||x.cls==scope();
+const empty=(i,t,s,b)=>`<div class="empty"><div class="i">${i}</div><h3>${t}</h3><p>${s}</p>${b||''}</div>`;
+function route(){const h=location.hash.slice(1)||'/';const v=document.getElementById('v');scrollTo(0,0);
+ if(h=='/portal'){if(S)return location.hash=S.role=='admin'?'/portal/admin':'/portal/klasa/'+S.cls;return v.innerHTML=login()}
+ if(h.startsWith('/portal/')){if(!S)return location.hash='/portal';
+  if(h=='/portal/admin'){if(S.role!='admin')return location.hash='/portal'}
+  else{const id=h.split('/')[3];if(!cl(id)||(S.role!='admin'&&S.cls!=id))return location.hash='/portal';cls=id}
+  v.innerHTML=panel();if(document.getElementById('hh'))hUI();return}
+ v.innerHTML=home()}
+addEventListener('hashchange',route);
+function nav(){return `<div class="top"><b> Pal Engjëlli</b><a href="#/">Kryesore</a><a href="#/portal"> Portali</a></div>`}
+function home(){const an=db.ann.filter(a=>a.pub);
+return nav()+`<div class="hero"><div class="logo"></div><h1>Shkolla 9-vjeçare “Pal Engjëlli”</h1><p>Tiranë, Shqipëri · Viti shkollor 2026–2027</p><p>Platformë për menaxhimin e mungesave, nxënësve dhe njoftimeve.</p><a class="btn" style="background:var(--y);color:#222" href="#/portal">Hyr në portalin personal</a></div>
+<div class="wrap"><h2>Klasat</h2><div class="grid">${C.map((c,i)=>`<div class="card st c${i+1}"><h2>${c[1]}</h2><div>Klasa ${c[1]}</div></div>`).join('')}</div>
+<h2>Njoftime</h2>${an.length?an.map(a=>`<div class="card" style="margin:8px 0"><b>${esc(a.t)}</b> <small>${a.d}</small><p>${esc(a.x)}</p></div>`).join(''):empty('','Nuk ka njoftime të publikuara.','Njoftimet shfaqen këtu pasi administratori t’i publikojë.')}
+<h2>Udhëzues përdorimi</h2><div class="grid"><div class="card"><h3>1. Hyrja</h3>Futni kodin e klasës ose të administratorit te Portali.</div><div class="card"><h3>2. Nxënësit</h3>Regjistrohen manualisht nga kujdestari ose administratori.</div><div class="card"><h3>3. Mungesat</h3>Zgjidhni nxënësin, datën dhe orët; ose “Ka munguar gjatë të gjitha orëve”.</div><div class="card"><h3>4. Raportet</h3>Tabela javore, përmbledhja dhe eksporti CSV/printim.</div></div>
+<h2>Kontakt institucional</h2>${empty('','Nuk ka të dhëna kontakti.','Administratori i shton vetë kontaktet.')}</div><footer>Shkolla 9-vjeçare “Pal Engjëlli” · Tiranë · 2026–2027<br>Administratori: Marjon Musta</footer>`}
+function login(){return nav()+`<div class="wrap" style="max-width:460px"><div class="card"><div style="text-align:center;font-size:44px"></div><h2 style="text-align:center">Portali i Mungesave</h2><p style="text-align:center;color:var(--mut)">Shkolla “Pal Engjëlli” · 2026–2027</p><label>Kodi i hyrjes</label><input id="code" type="password" style="width:100%" onkeydown="event.key=='Enter'&&doLogin()"><p id="err" style="color:var(--r)"></p><button onclick="doLogin()" style="width:100%">Hyr</button>
+${db.admin?'':`<hr><h3>Konfigurimi i parë</h3><p>Administratori Marjon Musta vendos kodin e vet:</p><input id="ac" type="password" placeholder="Kodi i ri i administratorit (min. 6)" style="width:100%"><br><br><button class="g" onclick="setAdmin()">Ruaj kodin e administratorit</button>`}
+<p class="note">Kodi i administratorit vendoset nga ju në hapjen e parë. Kujdestarët hyjnë me kodin e klasës.</p></div></div>`}
+async function setAdmin(){const v=document.getElementById('ac').value;if(v.length<6)return alert('Kodi duhet të ketë të paktën 6 karaktere.');db.admin=await H(v);save();alert('Kodi u ruajt. Tani hyni.');route()}
+async function doLogin(){const v=document.getElementById('code').value.trim(),h=await H(v),e=document.getElementById('err');
+ if(db.admin&&h==db.admin){S={role:'admin',name:'Marjon Musta'};lg('Hyrje administratori');return location.hash='/portal/admin'}
+ const c=C.find(c=>(db.codes[c[0]]||c[2])==h);
+ if(c){S={role:'class',cls:c[0],name:'Kujdestar '+c[1]};lg('Hyrje klasa '+c[1]);return location.hash='/portal/klasa/'+c[0]}
+ e.textContent='Kodi i pasaktë ose llogaria është e çaktivizuar.'}
+const out=()=>{lg('Dalje');S=null;location.hash='/'};
+function panel(){const adm=S.role=='admin';
+ const T=[['dash',' Paneli'],['stu',' Nxënësit'],['abs',' Mungesat'],['wk',' Tabela javore'],['rep',' Raportet'],...(adm?[['ann',' Njoftime'],['codes',' Kodet'],['log',' Historiku']]:[])];
+ return `<div class="app"><div class="side"><div style="font-size:30px"></div><b>${S.name}</b><br><br>${T.map(t=>`<button class="${tab==t[0]?'on':''}" onclick="tab='${t[0]}';route()">${t[1]}</button>`).join('')}<button onclick="out()"> Dil</button></div><div class="main">${adm&&['stu','abs','wk'].includes(tab)?`<div class="noprint">Klasa: <select onchange="cls=this.value;location.hash='/portal/admin';route()">${C.map(c=>`<option value="${c[0]}" ${c[0]==cls?'selected':''}>${c[1]}</option>`).join('')}</select></div>`:''}${views[tab]()}</div></div>`}
+const mc=()=>S.role=='admin'?cls:S.cls;
+const stOf=c=>db.stu.filter(s=>s.cls==c&&s.on!==false).sort((a,b)=>a.s.localeCompare(b.s));
+const views={
+dash(){const A=db.abs.filter(inS),t=today(),ad=A.filter(a=>a.date==t);
+ const k=[['Nxënës të regjistruar',db.stu.filter(inS).length],['Nxënës që munguan sot',new Set(ad.map(a=>a.sid)).size],['Orë të humbura sot',ad.length],['Të justifikuara',A.filter(a=>a.st==ST[2]).length],['Të pajustifikuara',A.filter(a=>a.st==ST[0]).length],['Në shqyrtim',A.filter(a=>a.st==ST[1]).length]];
+ return `<h1>Paneli kryesor</h1><div class="grid">${k.map((x,i)=>`<div class="card st c${i+1}"><h2>${x[1]}</h2>${x[0]}</div>`).join('')}</div><br>${db.stu.filter(inS).length?'':empty('','Nuk ka ende nxënës të regjistruar.','Filloni duke regjistruar nxënësit e klasës.','<button onclick="tab=\'stu\';route()">Regjistro nxënës</button>')}`},
+stu(){const c=mc(),L=db.stu.filter(s=>s.cls==c).sort((a,b)=>a.s.localeCompare(b.s));
+ return `<h1>Nxënësit · Klasa ${cl(c)[1]}</h1><div class="card noprint"><form onsubmit="addStu(event)"><input id="sn" placeholder="Emri" required> <input id="ss" placeholder="Mbiemri" required> <input id="sx" placeholder="Shënime"> <button>Regjistro nxënës</button></form></div><br><input placeholder=" Kërko" oninput="filt(this.value)" class="noprint">
+ ${L.length?`<div class="tw"><table id="tb"><tr><th>No</th><th>Emri</th><th>Mbiemri</th><th>Regjistruar</th><th>Statusi</th><th class="noprint"></th></tr>${L.map((s,i)=>`<tr><td>${i+1}</td><td>${esc(s.n)}</td><td>${esc(s.s)}</td><td>${s.d}</td><td>${s.on===false?'Çaktivizuar':'Aktiv'}</td><td class="noprint"><button class="s" onclick="togStu('${s.id}')">${s.on===false?'Riaktivizo':'Çaktivizo'}</button></td></tr>`).join('')}</table></div>`:empty('','Nuk ka ende nxënës të regjistruar.','Përdorni formularin më sipër.')}<br><button class="g noprint" onclick="csv(stuCsv(),'nxenesit')">Eksporto CSV</button>`},
+abs(){const c=mc(),L=stOf(c);if(!L.length)return `<h1>Mungesat</h1>`+empty('','Nuk ka nxënës.','Regjistroni fillimisht nxënës.','<button onclick="tab=\'stu\';route()">Regjistro nxënës</button>');
+ const A=db.abs.filter(a=>a.cls==c).slice(-15).reverse();
+ return `<h1>Regjistro mungesë · ${cl(c)[1]}</h1><div class="card"><label>Nxënësi</label><select id="as">${L.map(s=>`<option value="${s.id}">${esc(s.s)} ${esc(s.n)}</option>`).join('')}</select><label>Data</label><input type="date" id="ad" value="${today()}" onchange="hUI()"><label>Orët</label><div id="hh" class="chips"></div><button class="s" onclick="hSel('all')">Zgjidh të gjitha orët</button> <button class="s" onclick="hSel('none')">Pastro</button> Nga ora <select id="h1"></select> deri <select id="h2"></select> <button class="s" onclick="hSel('rng')">Zbato</button><button class="g" style="margin-left:6px" onclick="hSel('all');saveAbs()">Ka munguar gjatë të gjitha orëve</button>
+ <label>Statusi</label><select id="at">${ST.map(s=>`<option>${s}</option>`).join('')}</select><label>Arsyeja / shënime</label><input id="ar" style="width:100%"><br><br><button onclick="saveAbs()">Regjistro mungesën</button></div>
+ <h3>Të fundit</h3>${A.length?`<table><tr><th>Data</th><th>Nxënësi</th><th>Ora</th><th>Statusi</th><th>Nga</th></tr>${A.map(a=>{const s=db.stu.find(x=>x.id==a.sid)||{};return `<tr><td>${a.date}</td><td>${esc(s.s)} ${esc(s.n)}</td><td>${a.h}</td><td>${a.st}</td><td>${esc(a.by)}</td></tr>`}).join('')}</table>`:empty('','Nuk janë regjistruar mungesa.','Përdorni formularin më lart.')}`},
+wk(){const c=mc(),L=stOf(c);wk=wk||mon(today());const days=[...Array(5)].map((_,i)=>{const d=new Date(wk+'T12:00');d.setDate(d.getDate()+i);return d.toISOString().slice(0,10)});
+ const rows=Math.max(23,L.length);let h='';
+ for(let i=0;i<rows;i++){const s=L[i];h+=`<tr><td>${i+1}</td><td class="l">${s?esc(s.s)+' '+esc(s.n):''}</td>${days.map(d=>{const x=s?db.abs.filter(a=>a.sid==s.id&&a.date==d).map(a=>a.h).sort():[];return `<td class="${x.length?'m':''}">${x.length?x.join(',')+'<br><small>('+x.length+' orë)</small>':''}</td>`}).join('')}<td>${s?db.abs.filter(a=>a.sid==s.id&&days.includes(a.date)).length:''}</td></tr>`}
+ return `<h1 class="noprint">Tabela javore</h1><div class="noprint">Java që fillon: <input type="date" value="${wk}" onchange="wk=mon(this.value);route()"> <button onclick="print()"> Printo</button> <button class="g" onclick="csv(wkCsv(),'tabela-javore')">Eksporto CSV</button></div><div class="tw"><h2 style="text-align:center">MUNGESAT · Shkolla “Pal Engjëlli” 2026–2027</h2><p><b>KLASA:</b> ${cl(c)[1]} &nbsp; <b>DATA:</b> ${days[0]} – ${days[4]}</p><table><tr><th>No</th><th>Emri i nxënësit</th>${DAYS.map(d=>`<th>${d}</th>`).join('')}<th>Totali javor</th></tr>${h}</table></div><p class="noprint note">Qelia bosh = nuk është regjistruar ende (jo “i pranishëm”). Totali i javës llogaritet automatikisht.</p>`},
+rep(){const A=db.abs.filter(inS),cs=scope()?[cl(scope())]:C;
+ const by=cs.map(c=>[c[1],A.filter(a=>a.cls==c[0]).length]),mx=Math.max(1,...by.map(x=>x[1]));
+ const bs=ST.map(s=>[s,A.filter(a=>a.st==s).length]);const hh=[1,2,3,4,5,6,7].map(h=>[h+'. orë',A.filter(a=>a.h==h).length]);
+ const bars=(t,d)=>`<div class="card"><h3>${t}</h3>${d.map(x=>`<div style="display:flex;gap:8px;align-items:center;margin:4px 0"><span style="width:120px;font-size:13px">${x[0]}</span><div class="bar" style="width:${x[1]/Math.max(1,...d.map(y=>y[1]))*100}%">${x[1]}</div></div>`).join('')}</div>`;
+ const w={};A.forEach(a=>{const k=a.sid;w[k]=(w[k]||0)+1});const top=Object.entries(w).sort((a,b)=>b[1]-a[1]).slice(0,10);
+ return `<h1>Raportet</h1><p>Nxënës që kanë munguar: <b>${new Set(A.map(a=>a.sid)).size}</b> · Orë të humbura gjithsej: <b>${A.length}</b></p>${A.length?`<div class="grid">${bars('Orë të humbura sipas klasave',by)}${bars('Sipas statusit',bs)}${bars('Sipas orëve mësimore',hh)}</div><h3>Nxënësit me më shumë mungesa</h3><table><tr><th>Nxënësi</th><th>Klasa</th><th>Orë</th></tr>${top.map(t=>{const s=db.stu.find(x=>x.id==t[0])||{};return `<tr><td>${esc(s.s)} ${esc(s.n)}</td><td>${(cl(s.cls)||[])[1]}</td><td>${t[1]}</td></tr>`}).join('')}</table><br><button class="g" onclick="csv(absCsv(),'mungesat')">Eksporto CSV</button> <button onclick="print()"> Printo</button>`:empty('','Nuk ka ende raporte.','Raportet shfaqen pasi të regjistrohen mungesa.')}`},
+ann(){return `<h1>Njoftime</h1><div class="card"><input id="nt" placeholder="Titulli" style="width:100%"><br><textarea id="nx" rows="3" placeholder="Përmbajtja" style="width:100%"></textarea><label><input type="checkbox" id="np"> Publik (shfaqet në faqen kryesore)</label><button onclick="addAnn()">Publiko</button></div><br>${db.ann.length?db.ann.map((a,i)=>`<div class="card" style="margin:6px 0"><b>${esc(a.t)}</b> · ${a.d} · ${a.pub?'Publik':'Privat'}<p>${esc(a.x)}</p><button class="r" onclick="if(confirm('Fshi?')){db.ann.splice(${i},1);save();route()}">Fshi</button></div>`).join(''):empty('','Nuk ka njoftime të publikuara.','Krijoni njoftimin e parë.')}`},
+codes(){return `<h1>Kodet</h1><div class="card">${C.map(c=>`<div style="margin:6px 0">Klasa ${c[1]}: <input id="k${c[0]}" type="password" placeholder="Kod i ri" > <button onclick="setCode('${c[0]}')">Ndrysho</button></div>`).join('')}<hr>Kodi i administratorit: <input id="kadm" type="password" placeholder="Kod i ri"> <button onclick="setCode('adm')">Ndrysho</button></div><p class="note">Kodet ruhen vetëm si hash, por kjo faqe nuk ka server: për siguri reale nevojitet backend.</p>`},
+log(){return `<h1>Historiku i veprimeve</h1>${db.log.length?`<table><tr><th>Koha</th><th>Përdoruesi</th><th>Veprimi</th></tr>${db.log.slice(0,200).map(l=>`<tr><td>${l.t}</td><td>${esc(l.u)}</td><td class="l">${esc(l.a)}</td></tr>`).join('')}</table>`:empty('','Nuk ka veprime.','')}`}};
+function addStu(e){e.preventDefault();const c=mc(),n=sn.value.trim(),s=ss.value.trim();
+ if(db.stu.some(x=>x.cls==c&&x.n.toLowerCase()==n.toLowerCase()&&x.s.toLowerCase()==s.toLowerCase()))return alert('Ky nxënës ekziston tashmë në këtë klasë.');
+ db.stu.push({id:'s'+Date.now(),cls:c,n,s,note:sx.value,d:today()});lg(`Regjistroi nxënës ${n} ${s} (${cl(c)[1]})`);route()}
+function togStu(id){const s=db.stu.find(x=>x.id==id);if(!confirm('Konfirmo veprimin?'))return;s.on=s.on===false;lg('Ndryshoi statusin e '+s.n+' '+s.s);route()}
+function filt(q){q=q.toLowerCase();document.querySelectorAll('#tb tr').forEach((r,i)=>{if(i)r.style.display=r.textContent.toLowerCase().includes(q)?'':'none'})}
+function hUI(){const d=ad.value,n=hrs(d);hh.innerHTML=n?[...Array(n)].map((_,i)=>`<label><input type="checkbox" value="${i+1}"> Ora ${i+1}</label>`).join(''):'<span style="color:var(--r)">Fundjavë: nuk ka mësim.</span>';[h1,h2].forEach(s=>s.innerHTML=[...Array(n)].map((_,i)=>`<option>${i+1}</option>`).join(''))}
+function hSel(m){const b=[...hh.querySelectorAll('input')];b.forEach(x=>{const v=+x.value;x.checked=m=='all'?true:m=='none'?false:(v>=+h1.value&&v<=+h2.value)})}
+function saveAbs(){const hs=[...hh.querySelectorAll('input:checked')].map(x=>+x.value);if(!hs.length)return alert('Nuk keni zgjedhur asnjë orë.');
+ const sid=as.value,d=ad.value,ex=hs.filter(h=>db.abs.some(a=>a.sid==sid&&a.date==d&&a.h==h)),nw=hs.filter(h=>!ex.includes(h));
+ if(!nw.length)return alert('Të gjitha orët e zgjedhura janë regjistruar më parë: '+ex.join(', '));
+ if(!confirm(`Përmbledhje:\nDo të shtohen orët: ${nw.join(', ')}\n${ex.length?'Të regjistruara më parë: '+ex.join(', ')+'\n':''}Konfirmo?`))return;
+ nw.forEach(h=>db.abs.push({id:'a'+Date.now()+h,cls:mc(),sid,date:d,h,st:at.value,reason:ar.value,by:S.name,at:new Date().toISOString()}));lg(`Regjistroi ${nw.length} orë mungesë (${d})`);alert('U regjistrua.');route()}
+function addAnn(){if(!nt.value.trim())return alert('Shkruani titullin.');db.ann.unshift({t:nt.value,x:nx.value,pub:np.checked,d:today()});lg('Njoftim: '+nt.value);route()}
+async function setCode(k){const v=document.getElementById('k'+k).value;if(v.length<6)return alert('Minimumi 6 karaktere.');const h=await H(v);if(k=='adm')db.admin=h;else db.codes[k]=h;lg('Ndryshoi kodin: '+k);alert('Kodi u ndryshua.');route()}
+function csv(t,n){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\ufeff'+t],{type:'text/csv'}));a.download=n+'.csv';a.click()}
+const q=v=>'"'+String(v??'').replace(/"/g,'""')+'"';
+const stuCsv=()=>'No,Emri,Mbiemri,Klasa,Data\n'+db.stu.filter(s=>s.cls==mc()).map((s,i)=>[i+1,q(s.n),q(s.s),cl(s.cls)[1],s.d].join(',')).join('\n');
+const absCsv=()=>'Data,Klasa,Nxënësi,Ora,Statusi,Arsyeja\n'+db.abs.filter(inS).map(a=>{const s=db.stu.find(x=>x.id==a.sid)||{};return [a.date,cl(a.cls)[1],q(s.s+' '+s.n),a.h,q(a.st),q(a.reason)].join(',')}).join('\n');
+const wkCsv=()=>{const L=stOf(mc()),ds=[...Array(5)].map((_,i)=>{const d=new Date(wk+'T12:00');d.setDate(d.getDate()+i);return d.toISOString().slice(0,10)});return 'No,Nxënësi,'+DAYS.join(',')+',Totali\n'+L.map((s,i)=>[i+1,q(s.s+' '+s.n),...ds.map(d=>db.abs.filter(a=>a.sid==s.id&&a.date==d).length),db.abs.filter(a=>a.sid==s.id&&ds.includes(a.date)).length].join(',')).join('\n')};
+const AH='6a0069c3902bd2e0b3fd814932e290f82bb64e350ef3f1b4d3bf77e5767b8525';
+if(!db.v2){db.admin=AH;db.v2=1;save()}
+db.docs=db.docs||[];db.gal=db.gal||[];db.set=db.set||{};
+const LG=(n=44)=>db.set.logo?`<img src="${db.set.logo}" width="${n}" height="${n}" style="object-fit:contain;border-radius:50%" alt="Logo">`:`<svg viewBox="0 0 100 100" width="${n}" height="${n}" role="img" aria-label="Logo"><circle cx="50" cy="50" r="46" fill="#14284b" stroke="#c9a227" stroke-width="4"/><path d="M33 36 40 24 46 32 50 20 54 32 60 24 67 36Z" fill="#c9a227"/><path d="M24 46 50 54 76 46V74L50 82 24 74Z" fill="#fff"/><path d="M50 54V82" stroke="#14284b" stroke-width="2"/><path d="M31 54l14 4M31 61l14 4M69 54l-14 4M69 61l-14 4" stroke="#9aa7c0" stroke-width="2"/></svg>`;
+const PUB=[['','Kryesore'],['rreth','Rreth'],['klasat','Klasat'],['njoftime','Njoftime'],['dokumente','Dokumente'],['galeria','Galeria'],['aktivitetet','Aktivitetet'],['udhezuesi','Udhëzuesi'],['kontakti','Kontakti']];
+function nav(){return `<div class="top"><a class="lg" href="#/">${LG(38)}<span>Pal Engjëlli</span></a>${PUB.map(p=>`<a href="#/${p[0]}">${p[1]}</a>`).join('')}<a href="#/portal" style="background:var(--y);color:#14284b;font-weight:700"> Portali</a></div>`}
+var foot=()=>`<footer><div class="grid"><div>${LG(56)}<h3 style="color:#fff">Shkolla 9-vjeçare “Pal Engjëlli”</h3>Tiranë, Shqipëri<br>Viti shkollor 2026–2027</div><div><b>Faqet</b><br>${PUB.slice(1).map(p=>`<a href="#/${p[0]}">${p[1]}</a>`).join(' · ')}</div><div><b>Kontakt</b><br>${esc(db.set.addr||'—')}<br>${esc(db.set.tel||'')} ${esc(db.set.email||'')}</div></div><p>© 2026–2027 · Administratori i platformës: Marjon Musta</p></footer>`;
+var page=(t,s,b)=>nav()+`<div class="band"><h1 style="margin:0">${t}</h1><div>${s||''}</div></div><div class="wrap">${b}</div>`+foot();
+var annL=cat=>{const a=db.ann.filter(x=>x.pub&&(!cat||x.cat==cat));return a.length?a.map(a=>`<div class="card" style="margin:8px 0"><b>${esc(a.t)}</b> <small>· ${a.cat||'Njoftim'} · ${a.d}</small><p>${esc(a.x)}</p></div>`).join(''):empty('','Nuk ka ende përmbajtje të publikuar.','Administratori e publikon këtu kur është gati.')};
+const docL=()=>{const d=db.docs.filter(x=>x.pub);return d.length?`<div class="grid">${d.map(x=>`<div class="card"><h3> ${esc(x.n)}</h3><small>${x.d}</small><p>${esc(x.desc)}</p><a class="btn" href="${x.data}" download="${esc(x.name)}">Shkarko</a></div>`).join('')}</div>`:empty('','Nuk ka ende dokumente publike.','Dokumentet e ngarkuara nga administratori shfaqen këtu.')};
+const galL=n=>{const g=db.gal.filter(x=>x.pub).slice(0,n||99);return g.length?`<div class="grid">${g.map(x=>`<figure style="margin:0"><img class="gi" src="${x.data}" alt="${esc(x.n)}"><figcaption><b>${esc(x.n)}</b> <small>${x.d}</small></figcaption></figure>`).join('')}</div>`:empty('','Galeria është bosh.','Fotografitë publikohen nga administratori.')};
+const PG={
+rreth:()=>page('Rreth platformës','Menaxhim modern akademik','<div class="grid"><div class="card ft"><div class="ic"></div><h3>Misioni</h3>Platformë e unifikuar për regjistrimin e mungesave, nxënësve dhe komunikimit shkollor.</div><div class="card ft"><div class="ic"></div><h3>Privatësia</h3>Të dhënat e nxënësve nuk publikohen. Qasja bëhet vetëm me kod, sipas rolit.</div><div class="card ft"><div class="ic"></div><h3>Raportim</h3>Përmbledhje javore automatike për çdo nxënës dhe klasë.</div><div class="card ft"><div class="ic"></div><h3>Orari</h3>E hëna 7 orë; e marta–e premtja nga 6 orë.</div></div>'+(db.set.about?`<div class="card" style="margin-top:14px"><h3>Rreth shkollës</h3><p>${esc(db.set.about)}</p></div>`:'')),
+klasat:()=>page('Klasat','Gjashtë klasa · 2026–2027',`<div class="grid">${C.map((c,i)=>`<div class="card ft" style="border-top-color:${['#1f4e8c','#6b2737','#2f6f5e','#a8741a','#14284b','#5b4a8a'][i]}"><div class="ic"></div><h3>Klasa ${c[1]}</h3>Hyrja bëhet nga <a href="#/portal">Portali</a> me kodin e klasës.</div>`).join('')}</div>`),
+njoftime:()=>page('Njoftime','Informacione zyrtare',annL('Njoftim')),
+dokumente:()=>page('Dokumente publike','Formularë dhe materiale',docL()),
+galeria:()=>page('Galeria','Fotografi nga jeta shkollore',galL()),
+aktivitetet:()=>page('Aktivitetet shkollore','Ngjarje dhe aktivitete',annL('Aktivitet')),
+udhezuesi:()=>page('Udhëzuesi i përdorimit','Hapat kryesorë',`<div class="grid">${[['','Hyrja','Hapni Portalin dhe futni kodin tuaj.'],['','Nxënësit','Regjistrohen manualisht nga kujdestari ose administratori.'],['','Mungesat','Zgjidhni nxënësin, datën dhe orët, ose “Ka munguar gjatë të gjitha orëve”.'],['','Tabela javore','Shikoni, printoni ose eksportoni tabelën.'],['','Raportet','Përmbledhje javore për çdo klasë dhe nxënës.'],['','Dokumentet','Administratori ngarkon dokumente dhe fotografi.']].map(x=>`<div class="card ft"><div class="ic">${x[0]}</div><h3>${x[1]}</h3>${x[2]}</div>`).join('')}</div>`),
+kontakti:()=>page('Kontakti institucional','Tiranë, Shqipëri',db.set.addr||db.set.tel||db.set.email?`<div class="card"><p> ${esc(db.set.addr||'—')}</p><p> ${esc(db.set.tel||'—')}</p><p> ${esc(db.set.email||'—')}</p></div>`:empty('','Nuk ka të dhëna kontakti.','Administratori i shton te Cilësimet.'))};
+function home(){const A=db.ann.filter(a=>a.pub&&a.cat!='Aktivitet').slice(0,3);return nav()+`<div class="hero">${LG(110)}<h1 style="margin-top:12px">Shkolla 9-vjeçare “Pal Engjëlli”</h1><p>Tiranë, Shqipëri · Viti shkollor 2026–2027</p><p style="max-width:640px;margin:10px auto 20px">Platformë akademike për menaxhimin e nxënësve, mungesave dhe raportimit shkollor.</p><a class="btn" href="#/portal">Hyr në portalin personal</a> <a class="btn o" href="#/udhezuesi">Udhëzuesi</a></div>
+<div class="wrap"><h2>Çfarë ofron platforma</h2><div class="grid">${[['','Nxënësit','Regjistrim dhe kontroll sipas klasës'],['','Mungesat sipas orëve','Orë, ditë ose gjithë ditën'],['','Tabela javore','Printim A4 dhe eksport'],['','Raporte','Përmbledhje javore automatike'],['','Siguri','Qasje me kod dhe role'],['','Dokumente','Biblioteka publike dhe private']].map((x,i)=>`<div class="card ft"><div class="ic">${x[0]}</div><h3>${x[1]}</h3>${x[2]}</div>`).join('')}</div>
+<h2>Klasat</h2><div class="grid">${C.map((c,i)=>`<a href="#/klasat" style="text-decoration:none" class="card st c${i+1}"><h2 style="color:#fff">${c[1]}</h2>Klasa ${c[1]}</a>`).join('')}</div>
+<h2>Njoftimet e fundit</h2>${A.length?A.map(a=>`<div class="card" style="margin:8px 0"><b>${esc(a.t)}</b> <small>${a.d}</small><p>${esc(a.x)}</p></div>`).join(''):annL('x')}<p><a href="#/njoftime">Të gjitha njoftimet →</a></p>
+<h2>Galeria</h2>${galL(4)}<p><a href="#/galeria">Shiko galerinë →</a></p><h2>Dokumente publike</h2>${docL()}</div>`+foot()}
+function route(){const h=location.hash.slice(1)||'/';const v=document.getElementById('v');scrollTo(0,0);
+ if(h=='/portal'){if(S)return location.hash=S.role=='admin'?'/portal/admin':'/portal/klasa/'+S.cls;return v.innerHTML=login()}
+ if(h.startsWith('/portal/')){if(!S)return location.hash='/portal';
+  if(h=='/portal/admin'){if(S.role!='admin')return location.hash='/portal'}
+  else{const id=h.split('/')[3];if(!cl(id)||(S.role!='admin'&&S.cls!=id))return location.hash='/portal';cls=id}
+  v.innerHTML=panel();if(document.getElementById('hh'))hUI();return}
+ const k=h.replace('/','');v.innerHTML=PG[k]?PG[k]():home()}
+function login(){return nav()+`<div class="wrap" style="max-width:460px"><div class="card" style="text-align:center">${LG(90)}<h2>Portali i Mungesave</h2><p style="color:var(--mut)">Shkolla “Pal Engjëlli” · 2026–2027</p><label style="text-align:left">Kodi i hyrjes</label><input id="code" type="password" style="width:100%" onkeydown="event.key=='Enter'&&doLogin()"><p id="err" style="color:var(--r)"></p><button onclick="doLogin()" style="width:100%">Hyr</button><p class="note" style="text-align:left">Administratori hyn me kodin e vet; kujdestarët me kodin e klasës.</p></div></div>`+foot()}
+function panel(){const adm=S.role=='admin';const T=[['dash',' Paneli'],['stu',' Nxënësit'],['abs',' Regjistro mungesë'],['wk',' Tabela javore'],['rep',' Raportet'],...(adm?[['ed','Editori i faqeve'],['th','Pamja dhe ngjyrat'],['all',' Të gjitha mungesat'],['ann',' Njoftime'],['docs',' Dokumente'],['gal',' Galeria'],['set',' Cilësimet'],['codes',' Kodet'],['log',' Historiku']]:[])];
+ return `<div class="app"><div class="side">${LG(56)}<br><b>${S.name}</b><br><small>${adm?'Administrator kryesor':'Kujdestar klase'}</small><br><br>${T.map(t=>`<button class="${tab==t[0]?'on':''}" onclick="tab='${t[0]}';route()">${t[1]}</button>`).join('')}<button onclick="location.hash='/'"> Faqja publike</button><button onclick="out()"> Dil</button></div><div class="main">${adm&&['stu','abs','wk'].includes(tab)?`<div class="noprint">Klasa: <select onchange="cls=this.value;route()">${C.map(c=>`<option value="${c[0]}" ${c[0]==cls?'selected':''}>${c[1]}</option>`).join('')}</select></div>`:''}${views[tab]()}</div></div>`}
+let fc='';
+views.all=()=>{const L=db.abs.filter(a=>!fc||a.cls==fc).slice().reverse().slice(0,300);return `<h1>Të gjitha mungesat</h1><div class="noprint">Klasa: <select onchange="fc=this.value;route()"><option value="">Të gjitha</option>${C.map(c=>`<option value="${c[0]}" ${fc==c[0]?'selected':''}>${c[1]}</option>`).join('')}</select> <button class="g" onclick="csv(absCsv(),'mungesat')">Eksporto CSV</button></div><br>${L.length?`<div class="tw"><table><tr><th>Data</th><th>Klasa</th><th>Nxënësi</th><th>Ora</th><th>Statusi</th><th>Arsyeja</th><th>Nga</th><th></th></tr>${L.map(a=>{const s=db.stu.find(x=>x.id==a.sid)||{};return `<tr><td>${a.date}</td><td>${cl(a.cls)[1]}</td><td>${esc(s.s)} ${esc(s.n)}</td><td>${a.h}</td><td><select onchange="chSt('${a.id}',this.value)">${ST.map(t=>`<option ${t==a.st?'selected':''}>${t}</option>`).join('')}</select></td><td>${esc(a.reason)}</td><td>${esc(a.by)}</td><td><button class="r" onclick="delAbs('${a.id}')">Fshi</button></td></tr>`}).join('')}</table></div>`:empty('','Nuk janë regjistruar mungesa.','')}`};
+function chSt(id,v){const a=db.abs.find(x=>x.id==id);a.st=v;lg('Ndryshoi statusin e mungesës '+a.date+' në '+v)}
+function delAbs(id){if(!confirm('Fshi këtë mungesë?'))return;db.abs=db.abs.filter(x=>x.id!=id);lg('Fshiu mungesë');route()}
+const oldRep=views.rep;
+views.rep=()=>{const cs=scope()?[cl(scope())]:C;wk=wk||mon(today());const ds=[...Array(5)].map((_,i)=>{const d=new Date(wk+'T12:00');d.setDate(d.getDate()+i);return d.toISOString().slice(0,10)});
+ return oldRep()+`<h2>Përmbledhja javore (${ds[0]} – ${ds[4]})</h2><div class="noprint">Java: <input type="date" value="${wk}" onchange="wk=mon(this.value);route()"></div>`+cs.map(c=>{const L=stOf(c[0]),t=L.map(s=>[s,db.abs.filter(a=>a.sid==s.id&&ds.includes(a.date)).length]);return `<details><summary>Klasa ${c[1]} · ${L.length} nxënës · ${t.reduce((x,y)=>x+y[1],0)} orë të humbura</summary>${L.length?`<table><tr><th>Nxënësi</th><th>Orë të humbura</th></tr>${t.map(x=>`<tr><td class="l">${esc(x[0].s)} ${esc(x[0].n)}</td><td>${x[1]}</td></tr>`).join('')}</table>`:'Nuk ka nxënës.'}</details>`}).join('')};
+views.ann=()=>`<h1>Njoftime dhe aktivitete</h1><div class="card"><input id="nt" placeholder="Titulli" style="width:100%"><br><textarea id="nx" rows="3" placeholder="Përmbajtja" style="width:100%"></textarea><select id="nc"><option>Njoftim</option><option>Aktivitet</option></select> <label style="display:inline"><input type="checkbox" id="np"> Publik</label> <button onclick="addAnn()">Publiko</button></div><br>${db.ann.length?db.ann.map((a,i)=>`<div class="card" style="margin:6px 0"><b>${esc(a.t)}</b> · ${a.cat||'Njoftim'} · ${a.d} · ${a.pub?'Publik':'Privat'}<p>${esc(a.x)}</p><button class="r" onclick="if(confirm('Fshi?')){db.ann.splice(${i},1);save();route()}">Fshi</button></div>`).join(''):empty('','Nuk ka njoftime.','Krijoni të parin.')}`;
+function addAnn(){if(!nt.value.trim())return alert('Shkruani titullin.');db.ann.unshift({t:nt.value,x:nx.value,cat:nc.value,pub:np.checked,d:today()});lg('Publikoi: '+nt.value);route()}
+views.docs=()=>`<h1>Dokumente</h1><div class="card"><input id="dn" placeholder="Emri i dokumentit"> <input id="dd" placeholder="Përshkrimi"> <input type="file" id="df"> <label style="display:inline"><input type="checkbox" id="dp"> Publik</label> <button onclick="addDoc()">Ngarko</button><p class="note">Maksimumi 700 KB për skedar (ruhet në shfletues).</p></div><br>${db.docs.length?`<table><tr><th>Emri</th><th>Data</th><th>Qasja</th><th></th></tr>${db.docs.map((d,i)=>`<tr><td class="l">${esc(d.n)}</td><td>${d.d}</td><td>${d.pub?'Publik':'Privat'}</td><td><a class="btn" href="${d.data}" download="${esc(d.name)}">Shkarko</a> <button class="r" onclick="if(confirm('Fshi?')){db.docs.splice(${i},1);save();route()}">Fshi</button></td></tr>`).join('')}</table>`:empty('','Nuk ka ende dokumente.','Ngarkoni dokumentin e parë.')}`;
+const rd=(f,cb)=>{const r=new FileReader();r.onload=()=>cb(r.result);r.readAsDataURL(f)};
+function addDoc(){const f=df.files[0];if(!f||!dn.value.trim())return alert('Zgjidhni skedarin dhe emrin.');if(f.size>7e5)return alert('Skedari është shumë i madh.');rd(f,d=>{db.docs.push({n:dn.value,desc:dd.value,pub:dp.checked,data:d,name:f.name,d:today(),by:S.name});lg('Ngarkoi dokument '+dn.value);route()})}
+views.gal=()=>`<h1>Galeria</h1><div class="card"><input id="gn" placeholder="Titulli"> <input type="file" id="gf" accept="image/*"> <label style="display:inline"><input type="checkbox" id="gp"> Publik</label> <button onclick="addGal()">Ngarko foto</button></div><br>${db.gal.length?`<div class="grid">${db.gal.map((g,i)=>`<div class="card"><img class="gi" src="${g.data}"><b>${esc(g.n)}</b> · ${g.pub?'Publik':'Privat'}<br><button class="r" onclick="if(confirm('Fshi?')){db.gal.splice(${i},1);save();route()}">Fshi</button></div>`).join('')}</div>`:empty('','Galeria është bosh.','Ngarkoni fotografinë e parë.')}`;
+function rsz(f,m,cb){rd(f,u=>{const i=new Image();i.onload=()=>{const k=Math.min(1,m/Math.max(i.width,i.height)),c=document.createElement('canvas');c.width=i.width*k;c.height=i.height*k;c.getContext('2d').drawImage(i,0,0,c.width,c.height);cb(c.toDataURL('image/jpeg',.72))};i.src=u})}
+function addGal(){const f=gf.files[0];if(!f||!gn.value.trim())return alert('Zgjidhni foton dhe titullin.');rsz(f,900,d=>{db.gal.push({n:gn.value,pub:gp.checked,data:d,d:today()});lg('Ngarkoi foto '+gn.value);route()})}
+views.set=()=>`<h1>Cilësimet e platformës</h1><div class="card"><label>Logoja zyrtare (ngarkoni imazhin origjinal)</label><input type="file" id="lf" accept="image/*"> <button onclick="setLogo()">Vendos logon</button> <button class="s" onclick="delete db.set.logo;save();route()">Hiq logon</button><label>Adresa</label><input id="sa" value="${esc(db.set.addr)}" style="width:100%"><label>Telefoni</label><input id="st" value="${esc(db.set.tel)}"><label>Email</label><input id="se" value="${esc(db.set.email)}"><label>Rreth shkollës</label><textarea id="sb" rows="4" style="width:100%">${esc(db.set.about)}</textarea><br><br><button class="g" onclick="saveSet()">Ruaj</button></div>`;
+function setLogo(){const f=lf.files[0];if(!f)return alert('Zgjidhni imazhin.');rsz(f,300,d=>{db.set.logo=d;lg('Ndryshoi logon');route()})}
+function saveSet(){Object.assign(db.set,{addr:sa.value,tel:st.value,email:se.value,about:sb.value});lg('Ruajti cilësimet');alert('U ruajt.');route()}
+db.tch=db.tch||[];db.ev=db.ev||[];
+PUB.splice(2,0,['stafi','Stafi'],['kalendari','Kalendari']);
+const pt=()=>db.tch.filter(t=>t.pub&&t.on!==false);
+PG.stafi=()=>page('Stafi akademik','Mësuesit e shkollës',pt().length?`<div class="grid">${pt().map(t=>`<div class="card ft"><div class="ic"></div><h3>${esc(t.n)} ${esc(t.s)}</h3><b>${esc(t.subj)}</b><br>${t.home?'<span class="badge c1">Kujdestar '+cl(t.home)[1]+'</span>':''}${t.classes.map(c=>`<span class="badge c${C.findIndex(x=>x[0]==c)+1}">${cl(c)[1]}</span>`).join('')}</div>`).join('')}</div>`:empty('','Nuk ka ende mësues të publikuar.','Administratori i regjistron dhe i publikon te paneli.'));
+PG.kalendari=()=>{const E=db.ev.filter(e=>e.pub).sort((a,b)=>a.d.localeCompare(b.d));return page('Kalendari shkollor','Viti shkollor 2026–2027',E.length?E.map(e=>`<div class="card" style="margin:6px 0"><b> ${e.d}</b> · ${esc(e.t)}</div>`).join(''):empty('','Nuk ka ngjarje të publikuara.','Ngjarjet shtohen nga administratori.'))};
+const canStu=()=>S.role=='admin'||S.role=='class'||(S.role=='teacher'&&S.home==S.cls);
+const oldStu=views.stu;views.stu=()=>{const h=oldStu();return canStu()?h:h.replace(/<div class="card noprint"><form[\s\S]*?<\/form><\/div>/,'')};
+function route(){const h=location.hash.slice(1)||'/';const v=document.getElementById('v');scrollTo(0,0);
+ if(h=='/portal'){if(S)return location.hash=S.role=='admin'?'/portal/admin':'/portal/klasa/'+S.cls;return v.innerHTML=login()}
+ if(h.startsWith('/portal/')){if(!S)return location.hash='/portal';
+  if(h=='/portal/admin'){if(S.role!='admin')return location.hash='/portal'}
+  else{const id=h.split('/')[3];if(!cl(id)||(S.role!='admin'&&!(S.classes||[S.cls]).includes(id)))return location.hash='/portal';cls=id;if(S.role!='admin')S.cls=id}
+  v.innerHTML=panel();if(document.getElementById('hh'))hUI();return}
+ const k=h.replace('/','');v.innerHTML=PG[k]?PG[k]():home()}
+async function doLogin(){const v=document.getElementById('code').value.trim(),h=await H(v),e=document.getElementById('err');
+ if(db.admin&&h==db.admin){S={role:'admin',name:'Marjon Musta'};lg('Hyrje administratori');return location.hash='/portal/admin'}
+ const c=C.find(c=>(db.codes[c[0]]||c[2])==h);
+ if(c){S={role:'class',cls:c[0],classes:[c[0]],home:c[0],name:'Kujdestar '+c[1]};lg('Hyrje klasa '+c[1]);return location.hash='/portal/klasa/'+c[0]}
+ const t=db.tch.find(t=>t.code==h&&t.on!==false);
+ if(t){const cs=[...new Set([...(t.home?[t.home]:[]),...t.classes])];if(!cs.length){e.textContent='Ky mësues nuk ka klasa të caktuara.';return}S={role:'teacher',tid:t.id,cls:cs[0],classes:cs,home:t.home,name:'Mësues '+t.n+' '+t.s};lg('Hyrje mësuesi');return location.hash='/portal/klasa/'+cs[0]}
+ e.textContent='Kodi i pasaktë ose llogaria është e çaktivizuar.'}
+function panel(){const adm=S.role=='admin',many=!adm&&(S.classes||[]).length>1;const T=[['dash',' Paneli'],['stu',' Nxënësit'],['abs',' Regjistro mungesë'],['wk',' Tabela javore'],['rep',' Raportet'],['cal',' Kalendari'],...(adm?[['ed','Editori i faqeve'],['th','Pamja dhe ngjyrat'],['all',' Të gjitha mungesat'],['tch',' Mësuesit'],['ann',' Njoftime'],['docs',' Dokumente'],['gal',' Galeria'],['set',' Cilësimet'],['codes',' Kodet'],['log',' Historiku']]:[['prof',' Profili im']])];
+ const opts=adm?C:(S.classes||[S.cls]).map(cl);
+ return `<div class="app"><div class="side">${LG(56)}<br><b>${S.name}</b><br><small>${adm?'Administrator kryesor':S.role=='teacher'?'Mësues':'Kujdestar klase'}</small><br><br>${T.map(t=>`<button class="${tab==t[0]?'on':''}" onclick="tab='${t[0]}';route()">${t[1]}</button>`).join('')}<button onclick="location.hash='/'"> Faqja publike</button><button onclick="out()"> Dil</button></div><div class="main">${(adm||many)&&['stu','abs','wk'].includes(tab)?`<div class="noprint">Klasa: <select onchange="cls=this.value;if(S.role!='admin'){S.cls=this.value;location.hash='/portal/klasa/'+this.value}else route()">${opts.map(c=>`<option value="${c[0]}" ${c[0]==cls?'selected':''}>${c[1]}</option>`).join('')}</select></div>`:''}${views[tab]()}</div></div>`}
+views.prof=()=>{const t=db.tch.find(x=>x.id==S.tid);return `<h1>Profili im</h1><div class="card">${t?`<h3>${esc(t.n)} ${esc(t.s)}</h3><p>Lënda: <b>${esc(t.subj)}</b></p><p>Klasat ku jep mësim: ${t.classes.map(c=>`<span class="badge c${C.findIndex(x=>x[0]==c)+1}">${cl(c)[1]}</span>`).join('')||'—'}</p><p>Kujdestar i klasës: ${t.home?cl(t.home)[1]:'—'}</p>`:`<p>${S.name}</p><p>Kujdestar i klasës ${cl(S.cls)[1]}</p>`}</div>`};
+views.tch=()=>`<h1>Mësuesit</h1><div class="card"><h3>Regjistro mësues</h3><input id="tn" placeholder="Emri"> <input id="ts" placeholder="Mbiemri"> <input id="tl" placeholder="Lënda"> <input id="tc" type="password" placeholder="Kodi i hyrjes (min. 6)"><label>Klasat ku jep mësim (mund të zgjidhni 5 ose më shumë)</label><div class="chips">${C.map(c=>`<label><input type="checkbox" name="tcl" value="${c[0]}"> ${c[1]}</label>`).join('')}</div><label>Kujdestar i klasës (vetëm 1, opsionale)</label><select id="th"><option value="">Asnjë</option>${C.map(c=>`<option value="${c[0]}">${c[1]}</option>`).join('')}</select> <label style="display:inline"><input type="checkbox" id="tp"> Shfaq në faqen publike (Stafi)</label><br><br><button class="g" onclick="addTch()">Regjistro mësuesin</button></div><br>${db.tch.length?`<div class="tw"><table><tr><th>Mësuesi</th><th>Lënda</th><th>Klasat</th><th>Kujdestar</th><th>Statusi</th><th></th></tr>${db.tch.map(t=>`<tr><td class="l">${esc(t.n)} ${esc(t.s)}</td><td>${esc(t.subj)}</td><td>${t.classes.map(c=>cl(c)[1]).join(', ')}</td><td>${t.home?cl(t.home)[1]:'—'}</td><td>${t.on===false?'Çaktivizuar':'Aktiv'}</td><td><button class="s" onclick="tchOp('${t.id}','tog')">${t.on===false?'Riaktivizo':'Çaktivizo'}</button> <button onclick="tchOp('${t.id}','code')">Kodi</button> <button class="r" onclick="tchOp('${t.id}','del')">Fshi</button></td></tr>`).join('')}</table></div>`:empty('','Nuk ka ende mësues të regjistruar.','Përdorni formularin më sipër për të regjistruar mësuesin e parë.')}`;
+async function codeFree(v){const h=await H(v);return h!=db.admin&&!C.some(c=>(db.codes[c[0]]||c[2])==h)&&!db.tch.some(t=>t.code==h)?h:null}
+async function addTch(){const n=tn.value.trim(),s=ts.value.trim(),l=tl.value.trim(),cs=[...document.querySelectorAll('[name=tcl]:checked')].map(x=>x.value),hm=th.value;
+ if(!n||!s||!l)return alert('Plotësoni emrin, mbiemrin dhe lëndën.');if(tc.value.length<6)return alert('Kodi duhet të ketë të paktën 6 karaktere.');
+ if(!cs.length&&!hm)return alert('Zgjidhni të paktën një klasë.');if(hm&&db.tch.some(t=>t.home==hm&&t.on!==false))return alert('Kjo klasë ka tashmë kujdestar.');
+ const h=await codeFree(tc.value);if(!h)return alert('Ky kod përdoret tashmë. Zgjidhni një tjetër.');
+ db.tch.push({id:'t'+Date.now(),n,s,subj:l,code:h,classes:cs,home:hm,pub:tp.checked,d:today()});lg(`Regjistroi mësues ${n} ${s} (${l})`);route()}
+async function tchOp(id,op){const t=db.tch.find(x=>x.id==id);
+ if(op=='tog'){if(!confirm('Konfirmo?'))return;t.on=t.on===false;lg('Ndryshoi statusin e mësuesit '+t.s)}
+ else if(op=='del'){if(!confirm('Fshi mësuesin?'))return;db.tch=db.tch.filter(x=>x.id!=id);lg('Fshiu mësues '+t.s)}
+ else{const v=prompt('Kodi i ri (min. 6 karaktere):');if(!v||v.length<6)return;const h=await codeFree(v);if(!h)return alert('Ky kod përdoret tashmë.');t.code=h;lg('Ndryshoi kodin e mësuesit '+t.s);alert('Kodi u ndryshua.')}
+ route()}
+let cm=today().slice(0,7);
+views.cal=()=>{const [y,m]=cm.split('-').map(Number),f=new Date(y,m-1,1),n=new Date(y,m,0).getDate(),off=(f.getDay()+6)%7,A=db.abs.filter(inS);let g=DAYS.concat(['Shtunë','Diel']).map(d=>`<div class="h">${d.slice(0,3)}</div>`).join('')+'<div style="background:none;border:0"></div>'.repeat(off);
+ for(let d=1;d<=n;d++){const ds=`${cm}-${String(d).padStart(2,'0')}`,k=A.filter(a=>a.date==ds).length,ev=db.ev.filter(e=>e.d==ds);g+=`<div><b>${d}</b>${k?`<br><span class="badge c2">${k} orë mungesë</span>`:''}${ev.map(e=>`<br><span class="badge c1">${esc(e.t)}</span>`).join('')}</div>`}
+ return `<h1>Kalendari shkollor</h1><div class="noprint">Muaji: <input type="month" value="${cm}" onchange="cm=this.value||cm;route()"></div><br><div class="cal">${g}</div>${S.role=='admin'?`<h3>Shto ngjarje</h3><div class="card"><input type="date" id="ed"> <input id="et" placeholder="Titulli i ngjarjes"> <label style="display:inline"><input type="checkbox" id="ep"> Publike</label> <button onclick="addEv()">Shto</button></div>${db.ev.map((e,i)=>`<div class="card" style="margin:5px 0">${e.d} · ${esc(e.t)} · ${e.pub?'Publike':'Private'} <button class="r" onclick="db.ev.splice(${i},1);save();route()">Fshi</button></div>`).join('')}`:''}`};
+function addEv(){if(!ed.value||!et.value.trim())return alert('Plotësoni datën dhe titullin.');db.ev.push({d:ed.value,t:et.value,pub:ep.checked});lg('Shtoi ngjarje '+et.value);route()}
+let spId='';
+const sv=views.stu;
+views.stu=()=>sv().replace(/<td class="noprint">(<button class="s" onclick="togStu\('([^']+)'\)")/g,`<td class="noprint"><button onclick="spId='$2';tab='sp';route()">Profili</button> $1`);
+views.sp=()=>{const s=db.stu.find(x=>x.id==spId);if(!s||!inS(s))return '<h1>Profili i nxënësit</h1>'+empty('','Nuk ka nxënës të zgjedhur.','Zgjidhni një nxënës nga lista.','<button onclick="tab=\'stu\';route()">Lista e nxënësve</button>');
+ const A=db.abs.filter(a=>a.sid==s.id).sort((x,y)=>y.date.localeCompare(x.date)||x.h-y.h),dd=new Set(A.map(a=>a.date)).size;
+ return `<h1>Profili i nxënësit</h1><div class="grid"><div class="card"><h3>${esc(s.s)} ${esc(s.n)}</h3><p>Klasa: <b>${cl(s.cls)[1]}</b><br>Regjistruar më: ${s.d}<br>Statusi: ${s.on===false?'I çaktivizuar':'Aktiv'}</p>${s.note?`<p>${esc(s.note)}</p>`:''}</div><div class="card st c1"><h2>${A.length}</h2>Orë të humbura</div><div class="card st c2"><h2>${dd}</h2>Ditë me mungesa</div>${ST.map((t,i)=>`<div class="card st c${i+3}"><h2>${A.filter(a=>a.st==t).length}</h2>${t}</div>`).join('')}</div><br>${A.length?`<div class="tw"><table><tr><th>Data</th><th>Dita</th><th>Ora</th><th>Statusi</th><th>Arsyeja</th><th>Regjistroi</th></tr>${A.map(a=>`<tr><td>${a.date}</td><td>${DAYS[(new Date(a.date+'T12:00').getDay()+6)%7]}</td><td>${a.h}</td><td>${a.st}</td><td>${esc(a.reason)}</td><td>${esc(a.by)}</td></tr>`).join('')}</table></div>`:empty('','Nuk ka mungesa të regjistruara për këtë nxënës.','')}<br><button class="s" onclick="tab='stu';route()">Kthehu te lista</button> <button onclick="print()">Printo</button>`};
+const od=views.dash;
+views.dash=()=>{const cs=scope()?[cl(scope())]:C;return od()+`<h2>Pasqyra e klasave</h2><div class="tw"><table><tr><th>Klasa</th><th>Nxënës aktivë</th><th>Nxënës me mungesa</th><th>Orë të humbura</th><th>Pajustifikuara</th><th>Në shqyrtim</th><th>Të justifikuara</th></tr>${cs.map(c=>{const a=db.abs.filter(x=>x.cls==c[0]);return `<tr><td><b>${c[1]}</b></td><td>${stOf(c[0]).length}</td><td>${new Set(a.map(x=>x.sid)).size}</td><td>${a.length}</td><td>${a.filter(x=>x.st==ST[0]).length}</td><td>${a.filter(x=>x.st==ST[1]).length}</td><td>${a.filter(x=>x.st==ST[2]).length}</td></tr>`}).join('')}</table></div><h2>Veprime të shpejta</h2><div class="grid"><button onclick="tab='stu';route()">Regjistro nxënës</button><button class="g" onclick="tab='abs';route()">Regjistro mungesë</button><button class="s" onclick="tab='wk';route()">Tabela javore</button><button onclick="tab='rep';route()">Raportet</button></div>`};
+const xs=()=>`<div class="sec"><div class="wrap"><h2>Vlerat akademike</h2><div class="grid">${[['Integritet','Të dhëna të sakta dhe të regjistruara me përgjegjësi.'],['Transparencë','Çdo ndryshim ruhet në historikun e veprimeve.'],['Privatësi','Të dhënat e nxënësve nuk publikohen kurrë.'],['Përgjegjësi','Qasje e kufizuar sipas rolit dhe klasës.']].map(x=>`<div class="card ft"><h3>${x[0]}</h3>${x[1]}</div>`).join('')}</div>
+<h2>Si funksionon</h2><div class="grid steps">${[['Hyrja','Çdo përdorues hyn me kodin e vet personal.'],['Regjistrimi','Nxënësit regjistrohen manualisht nga kujdestari.'],['Mungesat','Mungesat regjistrohen sipas orëve mësimore.'],['Raportimi','Tabelat dhe raportet llogariten automatikisht.']].map(x=>`<div class="card"><h3>${x[0]}</h3>${x[1]}</div>`).join('')}</div>
+<h2>Qasja sipas rolit</h2><div class="tw"><table><tr><th>Roli</th><th>Qasja</th><th>Veprimet</th></tr><tr><td><b>Administrator</b></td><td>Të gjitha klasat</td><td>Menaxhon nxënësit, mësuesit, mungesat, dokumentet, kodet dhe faqet publike</td></tr><tr><td><b>Kujdestar klase</b></td><td>Klasa e tij</td><td>Regjistron nxënës dhe mungesa, eksporton tabelat e klasës</td></tr><tr><td><b>Mësues</b></td><td>Klasat e caktuara</td><td>Regjistron mungesa, shikon tabelat dhe raportet</td></tr></table></div></div></div>`;
+PG['']=()=>{const h=home(),f=foot();return h.slice(0,h.length-f.length)+xs()+f};
+PG.rreth=()=>page('Rreth platformës','Shkolla 9-vjeçare “Pal Engjëlli” · 2026–2027',`<div class="grid"><div class="card ft"><h3>Misioni</h3>Të mbështesë shkollën me një sistem të saktë dhe të sigurt për ndjekjen e frekuentimit të nxënësve.</div><div class="card ft"><h3>Vizioni</h3>Një mjedis shkollor ku informacioni është i organizuar, i qartë dhe i përdorshëm nga çdo mësues.</div><div class="card ft"><h3>Orari mësimor</h3>E hëna 7 orë; e marta deri e premte nga 6 orë.</div></div>${db.set.about?`<div class="card" style="margin-top:14px"><h3>Rreth shkollës</h3><p>${esc(db.set.about)}</p></div>`:''}`);
+delete PG[''];
+const MN=[['Rreth shkollës',[['rreth','Rreth platformës'],['stafi','Stafi akademik'],['kontakti','Kontakti institucional']]],['Klasat',[['klasat','Të gjitha klasat'],['kalendari','Kalendari shkollor']]],['Nxënësit',[['udhezuesi','Udhëzuesi i përdorimit'],['dokumente','Dokumente publike']]],['Media',[['njoftime','Njoftime'],['aktivitetet','Aktivitete'],['galeria','Galeria']]]];
+function nav(){return `<div class="u1"><div class="w"><span>Viti shkollor 2026–2027</span><span><a href="#/kalendari">Kalendari</a><a href="#/dokumente">Dokumente</a><a href="#/portal">Shërbime online</a></span></div></div><div class="u2"><div class="w"><a class="lg2" href="#/">${LG(68)}<span><b>${esc(br().a)}</b><i>${esc(br().b)}</i><small>${esc(br().c)}</small></span></a></div></div><nav class="u3"><div class="w"><a href="#/">Kryesore</a>${menuAll().map(m=>`<div class="dd" tabindex="0"><a>${m[0]}</a><div class="dm">${m[1].map(i=>`<a href="#/${i[0]}">${i[1]}</a>`).join('')}</div></div>`).join('')}<a class="pt" href="#/portal">Portali</a></div></nav>`}
+page=(t,s,b)=>nav()+`<div class="band"><div class="w"><div class="bc"><a href="#/">Kryesore</a> / ${t}</div><h1>${t}</h1><div>${s||''}</div></div></div><div class="wrap">${b}</div>`+foot();
+foot=()=>`<footer><div class="w ft3"><div>${LG(64)}<h4 style="margin-top:12px">Shkolla “Pal Engjëlli”</h4>Tiranë, Shqipëri<br>Viti shkollor 2026–2027</div><div><h4>Rreth shkollës</h4>${[['rreth','Rreth platformës'],['stafi','Stafi akademik'],['klasat','Klasat'],['kalendari','Kalendari'],['kontakti','Kontakti']].map(p=>`<a href="#/${p[0]}">${p[1]}</a>`).join('')}</div><div><h4>Media</h4>${[['njoftime','Njoftime'],['aktivitetet','Aktivitete'],['galeria','Galeria'],['dokumente','Dokumente'],['udhezuesi','Udhëzuesi']].map(p=>`<a href="#/${p[0]}">${p[1]}</a>`).join('')}</div><div><h4>Kontakt</h4>${esc(db.set.addr||'Tiranë, Shqipëri')}<br>${esc(db.set.tel||'')}<br>${esc(db.set.email||'')}<br><br><a href="#/portal">Hyr në portal</a></div></div><div class="cp">© 2026–2027 Shkolla 9-vjeçare “Pal Engjëlli” · Administratori i platformës: Marjon Musta</div></footer>`;
+const ncard=a=>{const x=a.x||'',lg=x.length>110;return `<div class="nc"><div class="nt">${a.d}<br>${a.cat||'Njoftim'}</div><div class="nb"><h3>${esc(a.t)}</h3><p>${esc(x.slice(0,110))}${lg?'…':''}</p>${lg?`<details><summary>Lexo më shumë</summary><p>${esc(x)}</p></details>`:''}</div></div>`};
+annL=cat=>{const a=db.ann.filter(x=>x.pub&&(!cat||x.cat==cat));return a.length?`<div class="ng">${a.map(ncard).join('')}</div>`:empty('','Nuk ka ende përmbajtje të publikuar.','Administratori e publikon këtu kur është gati.')};
+let si=0;
+function goSl(n){const s=[...document.querySelectorAll('.sl')],d=[...document.querySelectorAll('.dt')];if(!s.length)return;si=(n+s.length)%s.length;s.forEach((e,i)=>e.classList.toggle('on',i==si));d.forEach((e,i)=>e.classList.toggle('on',i==si))}
+setInterval(()=>{if(document.querySelector('.sl'))goSl(si+1)},6000);
+function home0(){si=0;const A=db.ann.filter(a=>a.pub&&a.cat!='Aktivitet').slice(0,4),E=db.ann.filter(a=>a.pub&&a.cat=='Aktivitet').slice(0,4),ph=db.gal.filter(x=>x.pub).slice(0,4);
+ const SL=hm().sl.map(x=>[esc(x[0]),esc(x[1]),esc(x[2]),safeH(x[3]),x[4]||'']);
+ const sec=(t,l,b)=>`<div class="sc"><div class="w"><div class="sh"><h2>${t}</h2>${l?`<a href="#/${l}">Shiko të gjitha →</a>`:''}</div>${b}</div></div>`;
+ return nav()+`<div class="hs">${SL.map((s,i)=>`<div class="sl ${i?'':'on'}" ${(SL[i][4]?{data:SL[i][4]}:ph[i])?`style="background-image:linear-gradient(90deg,#12306be6,#12306b66),url('${(SL[i][4]?{data:SL[i][4]}:ph[i]).data}')"`:''}><div class="w"><h2>${s[0]}</h2><p>${s[1]}</p><a class="btn" href="${s[3]}">${s[2]}</a></div></div>`).join('')}<button class="ar l" onclick="goSl(si-1)" aria-label="Para">&lsaquo;</button><button class="ar r" onclick="goSl(si+1)" aria-label="Pas">&rsaquo;</button><div class="dts">${SL.map((_,i)=>`<span class="dt ${i?'':'on'}" onclick="goSl(${i})"></span>`).join('')}</div></div>
+ <div class="tls">${hm().tl.map(x=>`<a class="tl" href="${safeH(x[2])}">${esc(x[0])}<small>${esc(x[1])}</small></a>`).join('')}</div>
+ ${sec('Njoftime','njoftime',A.length?`<div class="ng">${A.map(ncard).join('')}</div>`:empty('','Nuk ka njoftime të publikuara.','Njoftimet shfaqen këtu pasi administratori t’i publikojë.'))}
+ <div class="mt">${esc(hm().mt)}</div>
+ ${sec('Aktivitete shkollore','aktivitetet',E.length?`<div class="ng">${E.map(ncard).join('')}</div>`:empty('','Nuk ka aktivitete të publikuara.','Aktivitetet shtohen nga administratori.'))}
+ ${sec('Klasat','klasat',`<div class="cg">${C.map(c=>`<a class="cc" href="#/portal"><b>${c[1]}</b><span>Klasa ${c[1]} · Hyr në portal</span></a>`).join('')}</div>`)}
+ ${sec('Galeria','galeria',db.gal.filter(x=>x.pub).length?`<div class="gg">${db.gal.filter(x=>x.pub).slice(0,4).map(x=>`<figure style="margin:0"><img class="gi" src="${x.data}" alt="${esc(x.n)}"><figcaption>${esc(x.n)}</figcaption></figure>`).join('')}</div>`:empty('','Galeria është bosh.','Fotografitë publikohen nga administratori.'))}`+foot()}
+db.cms=db.cms||{};const K=db.cms;K.pages=K.pages||{};K.custom=K.custom||[];K.theme=Object.assign({p:'#12306b',a:'#b8963c',bg:'#f4f5f7',f:'serif'},K.theme);K.brand=K.brand||{a:'SHKOLLA 9-VJEÇARE',b:'“Pal Engjëlli”',c:'Tiranë, Shqipëri'};
+const br=()=>K.brand,safeH=u=>/^(#\/|https?:\/\/)/.test(u||'')?u:'#/',hx=c=>/^#[0-9a-f]{6}$/i.test(c);
+const HS0=[['Shkolla 9-vjeçare “Pal Engjëlli”','Viti shkollor 2026–2027 · Tiranë, Shqipëri','Rreth platformës','#/rreth'],['Portali i Mungesave','Regjistrim i saktë i mungesave sipas orëve mësimore dhe raportim javor.','Hyr në portal','#/portal'],['Klasat 6A deri 9','Gjashtë klasa me kujdestarë dhe mësues të caktuar.','Shiko klasat','#/klasat'],['Njoftime dhe aktivitete','Informacion zyrtar nga administrata e shkollës.','Lexo njoftimet','#/njoftime']];
+const HT0=[['Shërbime online','Portali i mungesave','#/portal'],['Dokumente publike','Formularë dhe materiale','#/dokumente'],['Kalendari shkollor','Ngjarjet e vitit 2026–2027','#/kalendari'],['Udhëzuesi','Si përdoret platforma','#/udhezuesi']];
+const hm=()=>{const h=K.home||{};return{sl:h.sl||HS0,mt:h.mt==null?'Dija. Disiplina. Përgjegjësia.':h.mt,tl:h.tl||HT0}};
+const hc=()=>{const h=K.home=K.home||{};h.sl=h.sl||JSON.parse(JSON.stringify(HS0));h.tl=h.tl||JSON.parse(JSON.stringify(HT0));if(h.mt==null)h.mt='Dija. Disiplina. Përgjegjësia.';return h};
+const menuAll=()=>MN.map(m=>[m[0],m[1].concat(K.custom.filter(c=>c.menu==m[0]&&c.on!==false).map(c=>[c.k,c.t]))]);
+function applyTheme(){const t=K.theme,p=hx(t.p)?t.p:'#12306b',a=hx(t.a)?t.a:'#b8963c',g=hx(t.bg)?t.bg:'#f4f5f7',f=t.f=='sans'?'system-ui,Segoe UI,Arial,sans-serif':'Georgia,Times New Roman,serif';let e=document.getElementById('thm');if(!e){e=document.createElement('style');e.id='thm';document.head.appendChild(e)}
+ e.textContent=`:root{--nav:${p};--b:${p};--y:${a};--bg:${g}}.u3,.tl,.mt,.hs,.band,.side,th,.cc b,.hero{background-color:${p}}.u1,.cp{background:color-mix(in srgb,${p} 70%,#000)}.sl{background-image:linear-gradient(120deg,${p},color-mix(in srgb,${p} 75%,#fff))}.nt{background:linear-gradient(120deg,${p},color-mix(in srgb,${p} 75%,#fff))}.tl:hover,.cc:hover b{background:color-mix(in srgb,${p} 80%,#fff)}.sl .btn,.u3 .pt{background:${a}}.u3,.mt,.band,.hero{border-color:${a}}.steps .card::before{background:${p}}h1,h2,h3,.lg2 b,.lg2 i,.mt,.tl,.sl h2{font-family:${f}}`}
+const pg=k=>K.pages[k]||(K.pages[k]={blocks:[]});
+const blk=b=>{const h=b.h?`<h2>${esc(b.h)}</h2>`:'',t=b.t?`<p style="white-space:pre-wrap">${esc(b.t)}</p>`:'',im=b.img?`<img class="bimg" src="${b.img}" alt="${esc(b.cap||b.h)}">`:'';
+ if(b.ty=='text')return `<div class="blk">${h}${t}</div>`;
+ if(b.ty=='img')return `<figure class="blk">${im}${b.cap?`<figcaption>${esc(b.cap)}</figcaption>`:''}</figure>`;
+ if(b.ty=='ti')return `<div class="blk tix ${b.al=='l'?'rev':''}"><div>${h}${t}</div><div>${im}</div></div>`;
+ if(b.ty=='btn')return `<div class="blk"><a class="btn" href="${safeH(b.href)}">${esc(b.lb||'Lexo më shumë')}</a></div>`;return ''};
+let curKey='home',edKey='home';
+const fab=()=>S&&S.role=='admin'?`<button class="edfab noprint" onclick="edGo('${curKey}')">Modifiko këtë faqe</button>`:'';
+function edGo(k){edKey=k;tab='ed';location.hash='/portal/admin'}
+page=(t,s,b)=>{const k=curKey,o=K.pages[k]||{},B=(o.blocks||[]).map(blk).join(''),pre=o.pos=='before'?B:'',post=o.pos=='before'?'':B;
+ return nav()+`<div class="band" ${o.img?`style="background-image:linear-gradient(90deg,color-mix(in srgb,var(--nav) 92%,transparent),color-mix(in srgb,var(--nav) 55%,transparent)),url('${o.img}');background-size:cover;background-position:center"`:''}><div class="w"><div class="bc"><a href="#/">Kryesore</a> / ${esc(o.t||t)}</div><h1>${esc(o.t||t)}</h1><div>${esc(o.s||s||'')}</div></div></div><div class="wrap">${pre}${o.hide?'':b}${post}</div>`+foot()+fab()};
+function home(){curKey='home';const h=home0(),f=foot(),B=(K.pages.home&&K.pages.home.blocks||[]).map(blk).join('');return h.slice(0,h.length-f.length)+(B?`<div class="sc"><div class="w">${B}</div></div>`:'')+f+fab()}
+const cus=k=>K.custom.find(c=>c.k==k&&c.on!==false);
+function route(){applyTheme();const h=location.hash.slice(1)||'/';const v=document.getElementById('v');scrollTo(0,0);
+ if(h=='/portal'){if(S)return location.hash=S.role=='admin'?'/portal/admin':'/portal/klasa/'+S.cls;return v.innerHTML=login()}
+ if(h.startsWith('/portal/')){if(!S)return location.hash='/portal';
+  if(h=='/portal/admin'){if(S.role!='admin')return location.hash='/portal'}
+  else{const id=h.split('/')[3];if(!cl(id)||(S.role!='admin'&&!(S.classes||[S.cls]).includes(id)))return location.hash='/portal';cls=id;if(S.role!='admin')S.cls=id}
+  v.innerHTML=panel();if(document.getElementById('hh'))hUI();return}
+ const k=h.replace('/','');curKey=k||'home';
+ if(Object.prototype.hasOwnProperty.call(PG,k))v.innerHTML=PG[k]();else if(cus(k))v.innerHTML=page(cus(k).t,'','');else{curKey='home';v.innerHTML=home()}}
+const PGL=[['home','Faqja kryesore'],['rreth','Rreth platformës'],['klasat','Klasat'],['njoftime','Njoftime'],['dokumente','Dokumente publike'],['galeria','Galeria'],['aktivitetet','Aktivitetet'],['udhezuesi','Udhëzuesi'],['kontakti','Kontakti'],['stafi','Stafi akademik'],['kalendari','Kalendari shkollor']];
+const allP=()=>PGL.concat(K.custom.map(c=>[c.k,c.t+' (e re)']));
+const fi=(h,f)=>`<input type="file" accept="image/*" onchange="${f}">`;
+const inp=(v,f,ph)=>`<input value="${esc(v)}" placeholder="${esc(ph||'')}" onchange="${f}">`;
+views.ed=()=>{const k=edKey,o=pg(k),cu=K.custom.find(c=>c.k==k),def=(allP().find(x=>x[0]==k)||['',''])[1];
+ let r=`<h1>Editori i faqeve</h1><div style="display:flex;gap:16px;flex-wrap:wrap"><div class="card" style="flex:0 0 230px"><b>Faqet</b>${allP().map(p=>`<button class="${p[0]==k?'':'s'}" style="display:block;width:100%;margin:4px 0;text-align:left" onclick="edKey='${p[0]}';route()">${esc(p[1])}</button>`).join('')}<hr><button class="g" style="width:100%" onclick="newPage()">+ Faqe e re</button></div><div style="flex:1;min-width:280px">`;
+ if(k=='home'){const h=hc();r+=`<div class="card"><h3>Slider-i i faqes kryesore</h3>${h.sl.map((x,i)=>`<div class="bk"><b>Slide ${i+1}</b>${inp(x[0],`hmS(${i},0,this.value)`,'Titulli')}<textarea rows="2" onchange="hmS(${i},1,this.value)">${esc(x[1])}</textarea>${inp(x[2],`hmS(${i},2,this.value)`,'Teksti i butonit')}${inp(x[3],`hmS(${i},3,this.value)`,'Lidhja (p.sh. #/rreth)')}<label>Foto sfondi</label>${fi('',`hmImg(${i},this)`)} ${x[4]?`<img src="${x[4]}" height="50"> <button class="r" onclick="hmS(${i},4,'');route()">Hiq foton</button>`:''}</div>`).join('')}<h3>Pllakat e shpejta</h3>${h.tl.map((x,i)=>`<div class="bk">${inp(x[0],`hmT(${i},0,this.value)`,'Titulli')}${inp(x[1],`hmT(${i},1,this.value)`,'Nën-teksti')}${inp(x[2],`hmT(${i},2,this.value)`,'Lidhja')}</div>`).join('')}<h3>Motoja</h3>${inp(h.mt,'hc().mt=this.value;save()','Motoja')}</div><br>`}
+ else{r+=`<div class="card"><h3>Titulli dhe banneri</h3><label>Titulli</label>${inp(o.t||'',`edF('${k}','t',this.value)`,def)}<label>Nën-titulli</label>${inp(o.s||'',`edF('${k}','s',this.value)`,'Opsionale')}<label>Foto banneri</label>${fi('',`edImg('${k}',this)`)} ${o.img?`<img src="${o.img}" height="50"> <button class="r" onclick="edF('${k}','img','');route()">Hiq</button>`:''}${cu?`<label>Vendosja në menu</label><select onchange="cuF('${k}','menu',this.value)">${MN.map(m=>`<option ${cu.menu==m[0]?'selected':''}>${m[0]}</option>`).join('')}</select><label><input type="checkbox" ${cu.on===false?'':'checked'} onchange="cuF('${k}','on',this.checked)"> Faqja është e publikuar</label>`:`<label><input type="checkbox" ${o.hide?'checked':''} onchange="edF('${k}','hide',this.checked);route()"> Fshih përmbajtjen standarde të faqes</label>`}<label>Blloqet shfaqen</label><select onchange="edF('${k}','pos',this.value)"><option value="after" ${o.pos!='before'?'selected':''}>Pas përmbajtjes standarde</option><option value="before" ${o.pos=='before'?'selected':''}>Para përmbajtjes standarde</option></select></div><br>`}
+ r+=`<div class="card"><h3>Blloqet e përmbajtjes</h3>${(o.blocks||[]).map((b,i)=>`<div class="bk"><b>${{text:'Tekst',img:'Foto',ti:'Tekst me foto',btn:'Buton'}[b.ty]}</b> <button class="s" onclick="blkMv('${k}',${i},-1)">Lart</button> <button class="s" onclick="blkMv('${k}',${i},1)">Poshtë</button> <button class="r" onclick="blkDel('${k}',${i})">Fshi</button>${b.ty=='btn'?inp(b.lb,`blkF('${k}',${i},'lb',this.value)`,'Teksti i butonit')+inp(b.href,`blkF('${k}',${i},'href',this.value)`,'Lidhja (#/faqe ose https://...)'):''}${b.ty=='text'||b.ty=='ti'?inp(b.h,`blkF('${k}',${i},'h',this.value)`,'Titulli i seksionit')+`<textarea rows="4" onchange="blkF('${k}',${i},'t',this.value)" placeholder="Teksti">${esc(b.t)}</textarea>`:''}${b.ty=='img'||b.ty=='ti'?`<label>Foto</label>${fi('',`blkImg('${k}',${i},this)`)}${b.img?`<img src="${b.img}" height="60">`:''}`:''}${b.ty=='img'?inp(b.cap,`blkF('${k}',${i},'cap',this.value)`,'Përshkrimi i fotos'):''}${b.ty=='ti'?`<select onchange="blkF('${k}',${i},'al',this.value)"><option value="r" ${b.al!='l'?'selected':''}>Foto djathtas</option><option value="l" ${b.al=='l'?'selected':''}>Foto majtas</option></select>`:''}</div>`).join('')||'<p>Nuk ka blloqe. Shtoni të parin më poshtë.</p>'}<button onclick="addBlk('${k}','text')">+ Tekst</button> <button onclick="addBlk('${k}','img')">+ Foto</button> <button onclick="addBlk('${k}','ti')">+ Tekst me foto</button> <button onclick="addBlk('${k}','btn')">+ Buton</button></div><br><button class="g" onclick="location.hash='/${k=='home'?'':k}'">Shiko faqen</button> ${cu?`<button class="r" onclick="delPage('${k}')">Fshi faqen</button>`:''}</div></div>`;return r};
+function edF(k,f,v){pg(k)[f]=v;const c=K.custom.find(x=>x.k==k);if(c&&f=='t'&&v)c.t=v;save()}
+function cuF(k,f,v){K.custom.find(c=>c.k==k)[f]=v;save()}
+function edImg(k,i){const f=i.files[0];if(f)rsz(f,1400,d=>{pg(k).img=d;save();route()})}
+function addBlk(k,ty){const o=pg(k);(o.blocks=o.blocks||[]).push({ty,h:'',t:'',img:'',cap:'',al:'r',lb:'',href:''});save();route()}
+function blkF(k,i,f,v){pg(k).blocks[i][f]=v;save()}
+function blkMv(k,i,d){const a=pg(k).blocks,j=i+d;if(j<0||j>=a.length)return;[a[i],a[j]]=[a[j],a[i]];save();route()}
+function blkDel(k,i){if(confirm('Fshi këtë bllok?')){pg(k).blocks.splice(i,1);save();route()}}
+function blkImg(k,i,inp){const f=inp.files[0];if(f)rsz(f,1200,d=>{pg(k).blocks[i].img=d;save();route()})}
+function hmS(i,j,v){hc().sl[i][j]=v;save()}function hmT(i,j,v){hc().tl[i][j]=v;save()}
+function hmImg(i,inp){const f=inp.files[0];if(f)rsz(f,1600,d=>{hc().sl[i][4]=d;save();route()})}
+function newPage(){const t=prompt('Titulli i faqes së re:');if(!t||!t.trim())return;const k='p_'+Date.now().toString(36);K.custom.push({k,t:t.trim(),menu:'Media',on:true});pg(k);edKey=k;lg('Krijoi faqe të re: '+t);route()}
+function delPage(k){if(!confirm('Fshi këtë faqe përgjithmonë?'))return;K.custom=K.custom.filter(c=>c.k!=k);delete K.pages[k];edKey='home';lg('Fshiu faqe');save();route()}
+views.th=()=>{const t=K.theme,b=K.brand;return `<h1>Pamja dhe ngjyrat</h1><div class="card"><h3>Ngjyrat dhe shkronjat</h3><label>Ngjyra kryesore (menu, banner, tabela)</label><input type="color" value="${t.p}" onchange="thF('p',this.value)"><label>Ngjyra e aksentit</label><input type="color" value="${t.a}" onchange="thF('a',this.value)"><label>Sfondi i faqes</label><input type="color" value="${t.bg}" onchange="thF('bg',this.value)"><label>Shkronjat e titujve</label><select onchange="thF('f',this.value)"><option value="serif" ${t.f!='sans'?'selected':''}>Serif (akademike)</option><option value="sans" ${t.f=='sans'?'selected':''}>Sans-serif (moderne)</option></select><br><br><button class="s" onclick="K.theme={p:'#12306b',a:'#b8963c',bg:'#f4f5f7',f:'serif'};save();route()">Rivendos ngjyrat standarde</button></div><br><div class="card"><h3>Koka e faqes (emri i shkollës)</h3>${inp(b.a,"brF('a',this.value)")}${inp(b.b,"brF('b',this.value)")}${inp(b.c,"brF('c',this.value)")}</div><br><div class="card"><h3>Kopje rezervë</h3><p>Të dhënat ruhen në këtë shfletues. Shkarkoni rregullisht një kopje.</p><button class="g" onclick="exDb()">Shkarko kopjen rezervë</button><br><br><label>Rikthe nga kopja</label><input type="file" accept=".json" onchange="imDb(this)"></div>`};
+function thF(f,v){K.theme[f]=v;save();applyTheme()}function brF(f,v){K.brand[f]=v;save()}
+function exDb(){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(db)],{type:'application/json'}));a.download='pal-engjelli-kopje-'+today()+'.json';a.click();lg('Shkarkoi kopje rezervë')}
+function imDb(i){const f=i.files[0];if(!f||!confirm('Të dhënat aktuale do të zëvendësohen. Vazhdo?'))return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(!Array.isArray(d.stu)||!Array.isArray(d.abs))throw 0;localStorage.setItem('pe26',JSON.stringify(d));location.reload()}catch(e){alert('Skedari nuk është kopje e vlefshme.')}};r.readAsText(f)}
+route();
+</script></body></html>
